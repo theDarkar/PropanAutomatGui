@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>443</width>
-    <height>275</height>
+    <width>482</width>
+    <height>285</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -35,82 +35,255 @@
    <property name="cursor">
     <cursorShape>ArrowCursor</cursorShape>
    </property>
-   <layout class="QHBoxLayout" name="horizontalLayout">
+   <layout class="QHBoxLayout" name="horizontalLayout_5">
     <item>
-     <widget class="CDPBaseContainer" name="userBaseContainer">
-      <layout class="QVBoxLayout" name="verticalLayout">
-       <item>
-        <widget class="CDPBaseLabel" name="cdpBaseLabel">
-         <property name="contextMenuPolicy">
-          <enum>Qt::DefaultContextMenu</enum>
-         </property>
-         <property name="text">
-          <string>Propan Automat</string>
-         </property>
-         <property name="textFormat">
-          <enum>Qt::AutoText</enum>
-         </property>
-         <property name="stylingType">
-          <enum>CDPBaseLabel::Title</enum>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QFrame" name="frame">
-         <property name="frameShape">
-          <enum>QFrame::StyledPanel</enum>
-         </property>
-         <property name="frameShadow">
-          <enum>QFrame::Raised</enum>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="CDPBaseButtonMsg" name="cdpBaseButtonMsg_2">
-         <property name="text">
-          <string>Bytte</string>
-         </property>
-         <property name="svgFile">
-          <string>:/themes/cdp_light/buttons/buttonPlain.svg</string>
-         </property>
-         <property name="cdpProperty" stdset="0">
-          <string/>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="CDPBaseButtonMsg" name="cdpBaseButtonMsg">
-         <property name="text">
-          <string>Kjøp</string>
-         </property>
-         <property name="svgFile">
-          <string>:/themes/cdp_light/buttons/buttonPlain.svg</string>
-         </property>
-         <property name="cdpProperty" stdset="0">
-          <string/>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-    </item>
-    <item>
-     <widget class="CDPBaseContainer" name="serviceBaseContainer">
-      <layout class="QHBoxLayout" name="horizontalLayout_2">
-       <item>
-        <widget class="CDPBaseButtonMsg" name="cdpBaseButtonMsg_3">
-         <property name="text">
-          <string>Service</string>
-         </property>
-         <property name="svgFile">
-          <string>:/themes/cdp_light/buttons/buttonPlain.svg</string>
-         </property>
-         <property name="cdpProperty" stdset="0">
-          <string/>
-         </property>
-        </widget>
-       </item>
-      </layout>
+     <widget class="CDPBaseStackedWidget" name="cdpBaseStackedWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="FrontPage">
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="CDPBaseContainer" name="userBaseContainer">
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <item>
+            <widget class="CDPBaseLabel" name="cdpBaseLabel">
+             <property name="contextMenuPolicy">
+              <enum>Qt::DefaultContextMenu</enum>
+             </property>
+             <property name="text">
+              <string>Propan Automat</string>
+             </property>
+             <property name="textFormat">
+              <enum>Qt::AutoText</enum>
+             </property>
+             <property name="stylingType">
+              <enum>CDPBaseLabel::Title</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="CDPBaseButtonMsg" name="cdpBaseButtonMsg_2">
+             <property name="text">
+              <string>Bytte</string>
+             </property>
+             <property name="svgFile">
+              <string>:/themes/cdp_light/buttons/buttonPlain.svg</string>
+             </property>
+             <property name="cdpProperty" stdset="0">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="CDPBaseButtonMsg" name="cdpBaseButtonMsg">
+             <property name="text">
+              <string>Kjøp</string>
+             </property>
+             <property name="svgFile">
+              <string>:/themes/cdp_light/buttons/buttonPlain.svg</string>
+             </property>
+             <property name="cdpProperty" stdset="0">
+              <string/>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="CDPBaseContainer" name="serviceBaseContainer">
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <widget class="CDPBaseLabel" name="cdpBaseLabel_2">
+             <property name="text">
+              <string>Night Mode:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="CDPBaseToggleButton" name="cdpBaseToggleButton">
+             <property name="svgFile">
+              <string>:/themes/cdp_light/buttons/toggleButtonDefault.svg</string>
+             </property>
+             <property name="textLeft" stdset="0">
+              <string>On</string>
+             </property>
+             <property name="textRight" stdset="0">
+              <string>Off</string>
+             </property>
+             <property name="cdpTextMsgOn">
+              <string>Night</string>
+             </property>
+             <property name="cdpTextMsgOff">
+              <string>Day</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="CDPBaseButtonMsg" name="cdpBaseButtonMsg_3">
+             <property name="text">
+              <string>Service</string>
+             </property>
+             <property name="svgFile">
+              <string>:/themes/cdp_light/buttons/buttonPlain.svg</string>
+             </property>
+             <property name="cdpProperty" stdset="0">
+              <string/>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="BuyPage">
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="CDPBaseContainer" name="cdpBaseContainer">
+          <layout class="QVBoxLayout" name="verticalLayout_4">
+           <item>
+            <widget class="CDPBaseLabel" name="cdpBaseLabel_3">
+             <property name="text">
+              <string>Kjøp</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="widget_2" native="true">
+             <layout class="QHBoxLayout" name="horizontalLayout">
+              <item>
+               <widget class="CDPBaseButtonMsg" name="cdpBaseButtonMsg_5">
+                <property name="text">
+                 <string>Liten Kombositt</string>
+                </property>
+                <property name="svgFile">
+                 <string>:/themes/cdp_light/buttons/buttonPlain.svg</string>
+                </property>
+                <property name="cdpProperty" stdset="0">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="CDPBaseButtonMsg" name="cdpBaseButtonMsg_4">
+                <property name="text">
+                 <string>Stor Kompositt</string>
+                </property>
+                <property name="svgFile">
+                 <string>:/themes/cdp_light/buttons/buttonPlain.svg</string>
+                </property>
+                <property name="cdpProperty" stdset="0">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="CDPBaseButtonMsg" name="cdpBaseButtonMsg_6">
+                <property name="text">
+                 <string>Stor Metall</string>
+                </property>
+                <property name="svgFile">
+                 <string>:/themes/cdp_light/buttons/buttonPlain.svg</string>
+                </property>
+                <property name="cdpProperty" stdset="0">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="CDPBaseButtonMsg" name="cdpBaseButtonMsg_7">
+                <property name="text">
+                 <string>Liten Metall</string>
+                </property>
+                <property name="svgFile">
+                 <string>:/themes/cdp_light/buttons/buttonPlain.svg</string>
+                </property>
+                <property name="cdpProperty" stdset="0">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="ExchangePage">
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="CDPBaseContainer" name="cdpBaseContainer_2"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="ChooseProductPage">
+       <layout class="QHBoxLayout" name="horizontalLayout_6">
+        <item>
+         <widget class="CDPBaseContainer" name="cdpBaseContainer_3"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="WaitForProductPage">
+       <layout class="QHBoxLayout" name="horizontalLayout_7">
+        <item>
+         <widget class="CDPBaseContainer" name="cdpBaseContainer_4"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="ServicePage">
+       <layout class="QHBoxLayout" name="horizontalLayout_8">
+        <item>
+         <widget class="CDPBaseContainer" name="cdpBaseContainer_5"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="ErrorPage">
+       <layout class="QHBoxLayout" name="horizontalLayout_9">
+        <item>
+         <widget class="CDPBaseContainer" name="cdpBaseContainer_6"/>
+        </item>
+       </layout>
+      </widget>
      </widget>
     </item>
    </layout>
@@ -124,6 +297,12 @@
    <container>1</container>
   </customwidget>
   <customwidget>
+   <class>CDPBaseStackedWidget</class>
+   <extends>QStackedWidget</extends>
+   <header>CDPBaseWidgets/CDPBaseStackedWidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
    <class>CDPBaseButton</class>
    <extends>QPushButton</extends>
    <header>CDPBaseWidgets/CDPBaseButton.h</header>
@@ -132,6 +311,11 @@
    <class>CDPBaseButtonMsg</class>
    <extends>CDPBaseButton</extends>
    <header>CDPBaseWidgets/CDPBaseButtonMsg.h</header>
+  </customwidget>
+  <customwidget>
+   <class>CDPBaseToggleButton</class>
+   <extends>QWidget</extends>
+   <header>CDPBaseWidgets/CDPBaseToggleButton.h</header>
   </customwidget>
   <customwidget>
    <class>CDPBaseLabel</class>
@@ -146,5 +330,22 @@
   </customwidget>
  </customwidgets>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>cdpBaseToggleButton</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>mainWindow</receiver>
+   <slot>setNightTheme(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>406</x>
+     <y>27</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>318</x>
+     <y>2</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>
