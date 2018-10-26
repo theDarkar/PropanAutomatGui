@@ -18,6 +18,7 @@
   <Subcomponents>
     <Subcomponent Name="CDP"                Model="CDP"               src="Components\CDP.xml"></Subcomponent>
     <Subcomponent Name="CDP2Qt"             Model="CDP2Qt"            src="Components\CDP2Qt.xml"></Subcomponent>
+    <Subcomponent Model="ModbusIO.ModbusMasterTCP" Name="ModbusMasterTCP" src="Components/ModbusMasterTCP.xml"></Subcomponent>
   </Subcomponents>
 
   <Signals>
