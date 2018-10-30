@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>532</width>
-    <height>285</height>
+    <width>632</width>
+    <height>371</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -39,7 +39,10 @@
     <item>
      <widget class="CDPBaseStackedWidget" name="cdpBaseStackedWidget">
       <property name="currentIndex">
-       <number>5</number>
+       <number>1</number>
+      </property>
+      <property name="cdpPageRouting" stdset="0">
+       <string>PropanAutomatGui.ModbusMasterTCP.ModbusMasterPacket.8-DI.DI0.Value</string>
       </property>
       <widget class="QWidget" name="FrontPage">
        <layout class="QHBoxLayout" name="horizontalLayout_2">
@@ -174,7 +177,7 @@
               <string>:/themes/cdp_light/buttons/buttonPlain.svg</string>
              </property>
              <property name="valueToEmit">
-              <number>5</number>
+              <number>6</number>
              </property>
              <property name="cdpProperty" stdset="0">
               <string/>
@@ -544,6 +547,23 @@
         </item>
        </layout>
       </widget>
+      <widget class="QWidget" name="ProductDeliveredPage">
+       <layout class="QHBoxLayout" name="horizontalLayout_19">
+        <item>
+         <widget class="CDPBaseContainer" name="cdpBaseContainer_9">
+          <layout class="QHBoxLayout" name="horizontalLayout_20">
+           <item>
+            <widget class="CDPBaseLabel" name="cdpBaseLabel_20">
+             <property name="text">
+              <string>Takk for handelen!</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
       <widget class="QWidget" name="ServicePage">
        <layout class="QHBoxLayout" name="horizontalLayout_8">
         <item>
@@ -705,7 +725,7 @@
         </item>
        </layout>
       </widget>
-      <widget class="QWidget" name="CouldNotFindProductPage">
+      <widget class="QWidget" name="ErrorCouldNotFindProductPage">
        <layout class="QVBoxLayout" name="verticalLayout_11">
         <item>
          <widget class="CDPBaseContainer" name="cdpBaseContainer_7">
@@ -776,7 +796,7 @@
         </item>
        </layout>
       </widget>
-      <widget class="QWidget" name="ProductNotInStockPage">
+      <widget class="QWidget" name="ErrorProductNotInStockPage">
        <layout class="QVBoxLayout" name="verticalLayout_14">
         <item>
          <widget class="CDPBaseContainer" name="cdpBaseContainer_8">
