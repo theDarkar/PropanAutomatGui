@@ -39,10 +39,10 @@
     <item>
      <widget class="CDPBaseStackedWidget" name="cdpBaseStackedWidget">
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <property name="cdpPageRouting" stdset="0">
-       <string>PropanAutomatGui.ModbusMasterTCP.ModbusMasterPacket.8-DI.DI0.Value</string>
+       <string>PropanAutomatGui.ModbusMasterTCP.ModbusMasterPacket.8-AI-short.AI5.Value</string>
       </property>
       <widget class="QWidget" name="FrontPage">
        <layout class="QHBoxLayout" name="horizontalLayout_2">
@@ -437,6 +437,9 @@
                    <property name="cdpProperty" stdset="0">
                     <string/>
                    </property>
+                   <property name="cdpRouting" stdset="0">
+                    <string>PropanAutomatGui.ModbusMasterTCP.8-DO.DO0</string>
+                   </property>
                   </widget>
                  </item>
                  <item>
@@ -449,6 +452,9 @@
                    </property>
                    <property name="cdpProperty" stdset="0">
                     <string/>
+                   </property>
+                   <property name="cdpRouting" stdset="0">
+                    <string>PropanAutomatGui.ModbusMasterTCP.8-DO.DO1</string>
                    </property>
                   </widget>
                  </item>
@@ -463,6 +469,9 @@
                    <property name="cdpProperty" stdset="0">
                     <string/>
                    </property>
+                   <property name="cdpRouting" stdset="0">
+                    <string>PropanAutomatGui.ModbusMasterTCP.8-DO.DO2</string>
+                   </property>
                   </widget>
                  </item>
                  <item>
@@ -475,6 +484,9 @@
                    </property>
                    <property name="cdpProperty" stdset="0">
                     <string/>
+                   </property>
+                   <property name="cdpRouting" stdset="0">
+                    <string>PropanAutomatGui.ModbusMasterTCP.8-DO.DO3</string>
                    </property>
                   </widget>
                  </item>
@@ -513,6 +525,9 @@
                    </property>
                    <property name="cdpProperty" stdset="0">
                     <string/>
+                   </property>
+                   <property name="cdpRouting" stdset="0">
+                    <string>PropanAutomatGui.ModbusMasterTCP.8-DO.DO6</string>
                    </property>
                   </widget>
                  </item>
