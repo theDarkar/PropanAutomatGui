@@ -38,11 +38,17 @@
    <layout class="QVBoxLayout" name="verticalLayout_9">
     <item>
      <widget class="CDPBaseStackedWidget" name="cdpBaseStackedWidget">
+      <property name="minimumSize">
+       <size>
+        <width>620</width>
+        <height>359</height>
+       </size>
+      </property>
       <property name="currentIndex">
        <number>0</number>
       </property>
       <property name="cdpPageRouting" stdset="0">
-       <string>PropanAutomatGui.ModbusMasterTCP.ModbusMasterPacket.8-AI-short.AI5.Value</string>
+       <string>PropanAutomatGui.ModbusMasterRTU.ModbusMasterPacket.8-AI-short.AI4.Value</string>
       </property>
       <widget class="QWidget" name="FrontPage">
        <layout class="QHBoxLayout" name="horizontalLayout_2">
@@ -51,27 +57,21 @@
           <layout class="QVBoxLayout" name="verticalLayout">
            <item>
             <widget class="CDPBaseLabel" name="cdpBaseLabel">
-             <property name="contextMenuPolicy">
-              <enum>Qt::DefaultContextMenu</enum>
+             <property name="font">
+              <font>
+               <family>Arial</family>
+               <pointsize>36</pointsize>
+              </font>
              </property>
              <property name="text">
               <string>Propan Automat</string>
              </property>
-             <property name="textFormat">
-              <enum>Qt::AutoText</enum>
-             </property>
-             <property name="stylingType">
-              <enum>CDPBaseLabel::Title</enum>
-             </property>
             </widget>
            </item>
            <item>
-            <widget class="CDPBaseLostRoutingsLabel" name="CDPBaseLostRoutingsLabel_2">
+            <widget class="CDPBaseLabel" name="cdpBaseLabel_21">
              <property name="text">
-              <string>Lagerstatus til brukeren</string>
-             </property>
-             <property name="cdpRouting" stdset="0">
-              <string>PropanAutomatGui.ModbusMasterTCP.8-AI-short.AI4</string>
+              <string/>
              </property>
             </widget>
            </item>
@@ -894,7 +894,8 @@
            <item>
             <widget class="CDPBaseLabel" name="cdpBaseLabel_11">
              <property name="text">
-              <string>Vennligst vent på personell</string>
+              <string>Ein uventet feil har hendt.
+Vennligst vent på autorisert personell.</string>
              </property>
             </widget>
            </item>
