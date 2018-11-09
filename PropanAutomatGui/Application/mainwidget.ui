@@ -10,6 +10,12 @@
     <height>371</height>
    </rect>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>632</width>
+    <height>371</height>
+   </size>
+  </property>
   <property name="windowTitle">
    <string>Main Window</string>
   </property>
@@ -48,7 +54,7 @@
        <number>0</number>
       </property>
       <property name="cdpPageRouting" stdset="0">
-       <string>PropanAutomatGui.ModbusMasterRTU.ModbusMasterPacket.8-AI-short.AI4.Value</string>
+       <string>PropanAutomatGui.ModbusSlaveTCP.WagoReadRegisterAO.8-AO-short.AO4.Value</string>
       </property>
       <widget class="QWidget" name="FrontPage">
        <layout class="QHBoxLayout" name="horizontalLayout_2">
@@ -65,13 +71,6 @@
              </property>
              <property name="text">
               <string>Propan Automat</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="CDPBaseLabel" name="cdpBaseLabel_21">
-             <property name="text">
-              <string/>
              </property>
             </widget>
            </item>
@@ -100,10 +99,10 @@
               <number>2</number>
              </property>
              <property name="cdpProperty" stdset="0">
-              <string/>
+              <string>Value</string>
              </property>
              <property name="cdpRouting" stdset="0">
-              <string>PropanAutomatGui.ModbusMasterTCP.8-DO.DO4</string>
+              <string>PropanAutomatGui.ModbusSlaveTCP.WagoWriteCoilsDI.8-DI.DI4</string>
              </property>
             </widget>
            </item>
@@ -223,10 +222,10 @@
                     <string>:/themes/cdp_light/buttons/buttonPlain.svg</string>
                    </property>
                    <property name="cdpProperty" stdset="0">
-                    <string/>
+                    <string>Value</string>
                    </property>
                    <property name="cdpRouting" stdset="0">
-                    <string>PropanAutomatGui.ModbusMasterTCP.8-DO.DO0</string>
+                    <string>PropanAutomatGui.ModbusSlaveTCP.WagoWriteCoilsDI.8-DI.DI0</string>
                    </property>
                   </widget>
                  </item>
@@ -239,10 +238,10 @@
                     <string>:/themes/cdp_light/buttons/buttonPlain.svg</string>
                    </property>
                    <property name="cdpProperty" stdset="0">
-                    <string/>
+                    <string>Value</string>
                    </property>
                    <property name="cdpRouting" stdset="0">
-                    <string>PropanAutomatGui.ModbusMasterTCP.8-DO.DO1</string>
+                    <string>PropanAutomatGui.ModbusSlaveTCP.WagoWriteCoilsDI.8-DI.DI1</string>
                    </property>
                   </widget>
                  </item>
@@ -255,10 +254,10 @@
                     <string>:/themes/cdp_light/buttons/buttonPlain.svg</string>
                    </property>
                    <property name="cdpProperty" stdset="0">
-                    <string/>
+                    <string>Value</string>
                    </property>
                    <property name="cdpRouting" stdset="0">
-                    <string>PropanAutomatGui.ModbusMasterTCP.8-DO.DO2</string>
+                    <string>PropanAutomatGui.ModbusSlaveTCP.WagoWriteCoilsDI.8-DI.DI2</string>
                    </property>
                   </widget>
                  </item>
@@ -271,10 +270,10 @@
                     <string>:/themes/cdp_light/buttons/buttonPlain.svg</string>
                    </property>
                    <property name="cdpProperty" stdset="0">
-                    <string/>
+                    <string>Value</string>
                    </property>
                    <property name="cdpRouting" stdset="0">
-                    <string>PropanAutomatGui.ModbusMasterTCP.8-DO.DO3</string>
+                    <string>PropanAutomatGui.ModbusSlaveTCP.WagoWriteCoilsDI.8-DI.DI3</string>
                    </property>
                   </widget>
                  </item>
@@ -383,10 +382,10 @@
                     <string>:/themes/cdp_light/buttons/buttonPlain.svg</string>
                    </property>
                    <property name="cdpProperty" stdset="0">
-                    <string/>
+                    <string>Value</string>
                    </property>
                    <property name="cdpRouting" stdset="0">
-                    <string>PropanAutomatGui.ModbusMasterTCP.8-DO.DO5</string>
+                    <string>PropanAutomatGui.ModbusSlaveTCP.WagoWriteCoilsDI.8-DI.DI5</string>
                    </property>
                   </widget>
                  </item>
@@ -435,10 +434,10 @@
                     <string>:/themes/cdp_light/buttons/buttonPlain.svg</string>
                    </property>
                    <property name="cdpProperty" stdset="0">
-                    <string/>
+                    <string>Value</string>
                    </property>
                    <property name="cdpRouting" stdset="0">
-                    <string>PropanAutomatGui.ModbusMasterTCP.8-DO.DO0</string>
+                    <string>PropanAutomatGui.ModbusSlaveTCP.WagoWriteCoilsDI.8-DI.DI0</string>
                    </property>
                   </widget>
                  </item>
@@ -451,10 +450,10 @@
                     <string>:/themes/cdp_light/buttons/buttonPlain.svg</string>
                    </property>
                    <property name="cdpProperty" stdset="0">
-                    <string/>
+                    <string>Value</string>
                    </property>
                    <property name="cdpRouting" stdset="0">
-                    <string>PropanAutomatGui.ModbusMasterTCP.8-DO.DO1</string>
+                    <string>PropanAutomatGui.ModbusSlaveTCP.WagoWriteCoilsDI.8-DI.DI1</string>
                    </property>
                   </widget>
                  </item>
@@ -467,10 +466,10 @@
                     <string>:/themes/cdp_light/buttons/buttonPlain.svg</string>
                    </property>
                    <property name="cdpProperty" stdset="0">
-                    <string/>
+                    <string>Value</string>
                    </property>
                    <property name="cdpRouting" stdset="0">
-                    <string>PropanAutomatGui.ModbusMasterTCP.8-DO.DO2</string>
+                    <string>PropanAutomatGui.ModbusSlaveTCP.WagoWriteCoilsDI.8-DI.DI2</string>
                    </property>
                   </widget>
                  </item>
@@ -483,10 +482,10 @@
                     <string>:/themes/cdp_light/buttons/buttonPlain.svg</string>
                    </property>
                    <property name="cdpProperty" stdset="0">
-                    <string/>
+                    <string>Value</string>
                    </property>
                    <property name="cdpRouting" stdset="0">
-                    <string>PropanAutomatGui.ModbusMasterTCP.8-DO.DO3</string>
+                    <string>PropanAutomatGui.ModbusSlaveTCP.WagoWriteCoilsDI.8-DI.DI3</string>
                    </property>
                   </widget>
                  </item>
@@ -524,10 +523,10 @@
                     <string>:/themes/cdp_light/buttons/buttonPlain.svg</string>
                    </property>
                    <property name="cdpProperty" stdset="0">
-                    <string/>
+                    <string>Value</string>
                    </property>
                    <property name="cdpRouting" stdset="0">
-                    <string>PropanAutomatGui.ModbusMasterTCP.8-DO.DO6</string>
+                    <string>PropanAutomatGui.ModbusSlaveTCP.WagoWriteCoilsDI.8-DI.DI5</string>
                    </property>
                   </widget>
                  </item>
@@ -647,7 +646,7 @@
                        <string>0</string>
                       </property>
                       <property name="cdpRouting" stdset="0">
-                       <string>PropanAutomatGui.ModbusMasterTCP.8-AI-short.AI0</string>
+                       <string>PropanAutomatGui.ModbusSlaveTCP.WagoReadRegisterAO.8-AO-short.AO0.Value</string>
                       </property>
                      </widget>
                     </item>
@@ -670,7 +669,7 @@
                        <string>0</string>
                       </property>
                       <property name="cdpRouting" stdset="0">
-                       <string>PropanAutomatGui.ModbusMasterTCP.8-AI-short.AI1</string>
+                       <string>PropanAutomatGui.ModbusSlaveTCP.WagoReadRegisterAO.8-AO-short.AO1.Value</string>
                       </property>
                      </widget>
                     </item>
@@ -699,7 +698,7 @@
                        <string>0</string>
                       </property>
                       <property name="cdpRouting" stdset="0">
-                       <string>PropanAutomatGui.ModbusMasterTCP.8-AI-short.AI2</string>
+                       <string>PropanAutomatGui.ModbusSlaveTCP.WagoReadRegisterAO.8-AO-short.AO2.Value</string>
                       </property>
                      </widget>
                     </item>
@@ -722,7 +721,7 @@
                        <string>0</string>
                       </property>
                       <property name="cdpRouting" stdset="0">
-                       <string>PropanAutomatGui.ModbusMasterTCP.8-AI-short.AI3</string>
+                       <string>PropanAutomatGui.ModbusSlaveTCP.WagoReadRegisterAO.8-AO-short.AO3.Value</string>
                       </property>
                      </widget>
                     </item>
@@ -894,7 +893,7 @@
            <item>
             <widget class="CDPBaseLabel" name="cdpBaseLabel_11">
              <property name="text">
-              <string>Ein uventet feil har hendt.
+              <string>Ein uventa feil har hendt.
 Vennligst vent på autorisert personell.</string>
              </property>
             </widget>
@@ -925,6 +924,114 @@ Vennligst vent på autorisert personell.</string>
                 </property>
                 <property name="cdpProperty" stdset="0">
                  <string/>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="StartUpPage">
+       <property name="cursor">
+        <cursorShape>WaitCursor</cursorShape>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_21">
+        <item>
+         <widget class="CDPBaseContainer" name="cdpBaseContainer_10">
+          <layout class="QHBoxLayout" name="horizontalLayout_22">
+           <item>
+            <widget class="CDPBaseLabel" name="cdpBaseLabel_21">
+             <property name="text">
+              <string>Vennligst vent for at automaten starter opp...</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="CloseDoorReminderPage">
+       <layout class="QHBoxLayout" name="horizontalLayout_23">
+        <item>
+         <widget class="CDPBaseContainer" name="cdpBaseContainer_11">
+          <layout class="QVBoxLayout" name="verticalLayout_23">
+           <item>
+            <widget class="QWidget" name="widget_23" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>200</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">image: url(:/warning-147699_1280.png);</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="CDPBaseLabel" name="cdpBaseLabel_22">
+             <property name="text">
+              <string>Vennligst lukk alle dører</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="NoEmptySpotPage">
+       <layout class="QHBoxLayout" name="horizontalLayout_25">
+        <item>
+         <widget class="CDPBaseContainer" name="cdpBaseContainer_12">
+          <layout class="QVBoxLayout" name="verticalLayout_22">
+           <item>
+            <widget class="CDPBaseLabel" name="cdpBaseLabel_23">
+             <property name="text">
+              <string>Ingen ledige plasser for å plassere i automaten</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="widget_20" native="true">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>42</height>
+              </size>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_26">
+              <item>
+               <spacer name="horizontalSpacer_8">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="CDPBaseButtonMsg" name="cdpBaseButtonMsg_19">
+                <property name="text">
+                 <string>Avbryt</string>
+                </property>
+                <property name="svgFile">
+                 <string>:/themes/cdp_light/buttons/buttonPlain.svg</string>
+                </property>
+                <property name="cdpProperty" stdset="0">
+                 <string>Value</string>
+                </property>
+                <property name="cdpRouting" stdset="0">
+                 <string>PropanAutomatGui.ModbusSlaveTCP.ModbusSlavePacketDO.8-DO.DO5E</string>
                 </property>
                </widget>
               </item>
@@ -1011,8 +1118,8 @@ Vennligst vent på autorisert personell.</string>
    <slot>setCurrentIndex(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>300</x>
-     <y>209</y>
+     <x>312</x>
+     <y>318</y>
     </hint>
     <hint type="destinationlabel">
      <x>515</x>
@@ -1027,8 +1134,8 @@ Vennligst vent på autorisert personell.</string>
    <slot>setCurrentIndex(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>435</x>
-     <y>257</y>
+     <x>613</x>
+     <y>352</y>
     </hint>
     <hint type="destinationlabel">
      <x>397</x>
@@ -1043,8 +1150,8 @@ Vennligst vent på autorisert personell.</string>
    <slot>setCurrentIndex(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>156</x>
-     <y>260</y>
+     <x>168</x>
+     <y>352</y>
     </hint>
     <hint type="destinationlabel">
      <x>152</x>
@@ -1059,8 +1166,8 @@ Vennligst vent på autorisert personell.</string>
    <slot>setCurrentIndex(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>432</x>
-     <y>243</y>
+     <x>81</x>
+     <y>33</y>
     </hint>
     <hint type="destinationlabel">
      <x>405</x>
@@ -1075,8 +1182,8 @@ Vennligst vent på autorisert personell.</string>
    <slot>setCurrentIndex(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>426</x>
-     <y>244</y>
+     <x>81</x>
+     <y>33</y>
     </hint>
     <hint type="destinationlabel">
      <x>418</x>
@@ -1091,8 +1198,8 @@ Vennligst vent på autorisert personell.</string>
    <slot>setCurrentIndex(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>451</x>
-     <y>237</y>
+     <x>601</x>
+     <y>340</y>
     </hint>
     <hint type="destinationlabel">
      <x>441</x>
@@ -1107,8 +1214,8 @@ Vennligst vent på autorisert personell.</string>
    <slot>setCurrentIndex(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>81</x>
-     <y>248</y>
+     <x>99</x>
+     <y>346</y>
     </hint>
     <hint type="destinationlabel">
      <x>72</x>
@@ -1123,8 +1230,8 @@ Vennligst vent på autorisert personell.</string>
    <slot>setCurrentIndex(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>416</x>
-     <y>257</y>
+     <x>607</x>
+     <y>335</y>
     </hint>
     <hint type="destinationlabel">
      <x>399</x>
@@ -1139,8 +1246,8 @@ Vennligst vent på autorisert personell.</string>
    <slot>setCurrentIndex(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>445</x>
-     <y>251</y>
+     <x>607</x>
+     <y>335</y>
     </hint>
     <hint type="destinationlabel">
      <x>437</x>
@@ -1155,12 +1262,28 @@ Vennligst vent på autorisert personell.</string>
    <slot>setCurrentIndex(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>444</x>
-     <y>246</y>
+     <x>607</x>
+     <y>335</y>
     </hint>
     <hint type="destinationlabel">
      <x>435</x>
      <y>278</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cdpBaseButtonMsg_19</sender>
+   <signal>clicked(int)</signal>
+   <receiver>cdpBaseStackedWidget</receiver>
+   <slot>setCurrentIndex(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>591</x>
+     <y>327</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>623</x>
+     <y>335</y>
     </hint>
    </hints>
   </connection>

@@ -8,7 +8,7 @@
   <OStimeInterval>120</OStimeInterval>
   <Domain>PropanAutomatGui</Domain>
 
-  <NetworkInterface Name="ETH0" MAC="" IPAddress="158.38.195.187" SubnetMask="255.255.255.0"></NetworkInterface>
+  <NetworkInterface Name="ETH0" MAC="" IPAddress="127.0.0.1" SubnetMask="255.255.255.255"></NetworkInterface>
 
   <CDPMessages>
     <TimestampLocal>1</TimestampLocal>
@@ -18,8 +18,7 @@
   <Subcomponents>
     <Subcomponent Name="CDP"                Model="CDP"               src="Components\CDP.xml"></Subcomponent>
     <Subcomponent Name="CDP2Qt"             Model="CDP2Qt"            src="Components\CDP2Qt.xml"></Subcomponent>
-    <Subcomponent Model="ModbusIO.ModbusMasterTCP" Name="ModbusMasterTCP" src="Components/ModbusMasterTCP.xml"></Subcomponent>
-    <Subcomponent Model="ModbusIO.ModbusMasterRTU" Name="ModbusMasterRTU" src="Components/ModbusMasterRTU.xml"></Subcomponent>
+    <Subcomponent Model="ModbusIO.ModbusSlaveTCP" Name="ModbusSlaveTCP" src="Components/ModbusSlaveTCP.xml"></Subcomponent>
   </Subcomponents>
 
   <Signals>
