@@ -2,5 +2,9 @@
     <qresource prefix="/">
         <file>Error_icon.png</file>
         <file>warning-147699_1280.png</file>
+        <file>Liten kompositt propan tank.jpg</file>
+        <file>Liten metall propan tank.jpg</file>
+        <file>Stor kompositt propan tank.jpg</file>
+        <file>Stor metall propan tank.jpg</file>
     </qresource>
 </RCC>

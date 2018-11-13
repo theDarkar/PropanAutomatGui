@@ -39,8 +39,7 @@ DISTFILES += \
     Application/www/vue.common.min.js.map \
     Application/www/studioapi.proto \
     Application/www/jquery.slim.min.map \
-    Application/www/images/Error_icon.png \
-    Error_icon.png
+    Application/www/images/Error_icon.png
 
 load(cdp)
 
