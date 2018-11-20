@@ -1,25 +1,25 @@
-<Component Model='PropanAutomatGuiLibrary.BitsToUnsignedShortConverter' Name='StatusSmallMetall' src='Components/BitsToUnsignedShortConverter1.xml'  Description='Holds status for small metall canisters'>
+<Component Model='PropanAutomatGuiLibrary.BitsToUnsignedShortConverter' Name='BitsToUnsignedShortConverter1' src='Components/BitsToUnsignedShortConverter1.xml'  Description='Turns 16 single bits into one unsigned short'>
   <fs>5</fs>
 
   <Signals>
     <Signal Description="Process run time each s." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Timer" Type="double" Unit="s/s"></Signal>
     <Signal Description="Process interval [s]." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Period" Type="double" Unit="s"></Signal>
-    <Signal Description="Input bit nr 0" Input="1" Model="CDPSignal&lt;bool&gt;" Name="Bit0" Type="bool"  Routing='PropanAutomatGui.ModbusSlaveTCP.WagoReadCoilsDO.16-DO-2.DO00'></Signal>
-    <Signal Description="Input bit nr 1" Input="1" Model="CDPSignal&lt;bool&gt;" Name="Bit1" Type="bool"  Routing='PropanAutomatGui.ModbusSlaveTCP.WagoReadCoilsDO.16-DO-2.DO01'></Signal>
-    <Signal Description="Input bit nr 2" Input="1" Model="CDPSignal&lt;bool&gt;" Name="Bit2" Type="bool"  Routing='PropanAutomatGui.ModbusSlaveTCP.WagoReadCoilsDO.16-DO-2.DO02'></Signal>
-    <Signal Description="Input bit nr 3" Input="1" Model="CDPSignal&lt;bool&gt;" Name="Bit3" Type="bool"  Routing='PropanAutomatGui.ModbusSlaveTCP.WagoReadCoilsDO.16-DO-2.DO03'></Signal>
-    <Signal Description="Input bit nr 4" Input="1" Model="CDPSignal&lt;bool&gt;" Name="Bit4" Type="bool"  Routing='PropanAutomatGui.ModbusSlaveTCP.WagoReadCoilsDO.16-DO-2.DO04'></Signal>
-    <Signal Description="Input bit nr 5" Input="1" Model="CDPSignal&lt;bool&gt;" Name="Bit5" Type="bool"  Routing='PropanAutomatGui.ModbusSlaveTCP.WagoReadCoilsDO.16-DO-2.DO05'></Signal>
-    <Signal Description="Input bit nr 6" Input="1" Model="CDPSignal&lt;bool&gt;" Name="Bit6" Type="bool"  Routing='PropanAutomatGui.ModbusSlaveTCP.WagoReadCoilsDO.16-DO-2.DO06'></Signal>
-    <Signal Description="Input bit nr 7" Input="1" Model="CDPSignal&lt;bool&gt;" Name="Bit7" Type="bool"  Routing='PropanAutomatGui.ModbusSlaveTCP.WagoReadCoilsDO.16-DO-2.DO07'></Signal>
-    <Signal Description="Input bit nr 8" Input="1" Model="CDPSignal&lt;bool&gt;" Name="Bit8" Type="bool"  Routing='PropanAutomatGui.ModbusSlaveTCP.WagoReadCoilsDO.16-DO-2.DO08'></Signal>
-    <Signal Description="Input bit nr 9" Input="1" Model="CDPSignal&lt;bool&gt;" Name="Bit9" Type="bool"  Routing='PropanAutomatGui.ModbusSlaveTCP.WagoReadCoilsDO.16-DO-2.DO09'></Signal>
-    <Signal Description="Input bit nr 10" Input="1" Model="CDPSignal&lt;bool&gt;" Name="Bit10" Type="bool"  Routing='PropanAutomatGui.ModbusSlaveTCP.WagoReadCoilsDO.16-DO-2.DO10'></Signal>
-    <Signal Description="Input bit nr 11" Input="1" Model="CDPSignal&lt;bool&gt;" Name="Bit11" Type="bool"  Routing='PropanAutomatGui.ModbusSlaveTCP.WagoReadCoilsDO.16-DO-2.DO11'></Signal>
-    <Signal Description="Input bit nr 12" Input="1" Model="CDPSignal&lt;bool&gt;" Name="Bit12" Type="bool"  Routing='PropanAutomatGui.ModbusSlaveTCP.WagoReadCoilsDO.16-DO-2.DO12'></Signal>
-    <Signal Description="Input bit nr 13" Input="1" Model="CDPSignal&lt;bool&gt;" Name="Bit13" Type="bool"  Routing='PropanAutomatGui.ModbusSlaveTCP.WagoReadCoilsDO.16-DO-2.DO13'></Signal>
-    <Signal Description="Input bit nr 14" Input="1" Model="CDPSignal&lt;bool&gt;" Name="Bit14" Type="bool"  Routing='PropanAutomatGui.ModbusSlaveTCP.WagoReadCoilsDO.16-DO-2.DO14'></Signal>
-    <Signal Description="Input bit nr 15" Input="1" Model="CDPSignal&lt;bool&gt;" Name="Bit15" Type="bool"  Routing='PropanAutomatGui.ModbusSlaveTCP.WagoReadCoilsDO.16-DO-2.DO15'></Signal>
+    <Signal Description="Input bit nr 0" Input="1" Model="CDPSignal&lt;bool&gt;" Name="Bit0" Type="bool"  Routing='PropanAutomatGui.ModbusSlaveTCP.WagoReadCoilsDO.16-DO-1.DO00'></Signal>
+    <Signal Description="Input bit nr 1" Input="1" Model="CDPSignal&lt;bool&gt;" Name="Bit1" Type="bool"  Routing='PropanAutomatGui.ModbusSlaveTCP.WagoReadCoilsDO.16-DO-1.DO01'></Signal>
+    <Signal Description="Input bit nr 2" Input="1" Model="CDPSignal&lt;bool&gt;" Name="Bit2" Type="bool"  Routing='PropanAutomatGui.ModbusSlaveTCP.WagoReadCoilsDO.16-DO-1.DO02'></Signal>
+    <Signal Description="Input bit nr 3" Input="1" Model="CDPSignal&lt;bool&gt;" Name="Bit3" Type="bool"  Routing='PropanAutomatGui.ModbusSlaveTCP.WagoReadCoilsDO.16-DO-1.DO03'></Signal>
+    <Signal Description="Input bit nr 4" Input="1" Model="CDPSignal&lt;bool&gt;" Name="Bit4" Type="bool"  Routing='PropanAutomatGui.ModbusSlaveTCP.WagoReadCoilsDO.16-DO-1.DO04'></Signal>
+    <Signal Description="Input bit nr 5" Input="1" Model="CDPSignal&lt;bool&gt;" Name="Bit5" Type="bool"  Routing='PropanAutomatGui.ModbusSlaveTCP.WagoReadCoilsDO.16-DO-1.DO05'></Signal>
+    <Signal Description="Input bit nr 6" Input="1" Model="CDPSignal&lt;bool&gt;" Name="Bit6" Type="bool"  Routing='PropanAutomatGui.ModbusSlaveTCP.WagoReadCoilsDO.16-DO-1.DO06'></Signal>
+    <Signal Description="Input bit nr 7" Input="1" Model="CDPSignal&lt;bool&gt;" Name="Bit7" Type="bool"  Routing='PropanAutomatGui.ModbusSlaveTCP.WagoReadCoilsDO.16-DO-1.DO07'></Signal>
+    <Signal Description="Input bit nr 8" Input="1" Model="CDPSignal&lt;bool&gt;" Name="Bit8" Type="bool"  Routing='PropanAutomatGui.ModbusSlaveTCP.WagoReadCoilsDO.16-DO-1.DO08'></Signal>
+    <Signal Description="Input bit nr 9" Input="1" Model="CDPSignal&lt;bool&gt;" Name="Bit9" Type="bool"  Routing='PropanAutomatGui.ModbusSlaveTCP.WagoReadCoilsDO.16-DO-1.DO09'></Signal>
+    <Signal Description="Input bit nr 10" Input="1" Model="CDPSignal&lt;bool&gt;" Name="Bit10" Type="bool"  Routing='PropanAutomatGui.ModbusSlaveTCP.WagoReadCoilsDO.16-DO-1.DO10'></Signal>
+    <Signal Description="Input bit nr 11" Input="1" Model="CDPSignal&lt;bool&gt;" Name="Bit11" Type="bool"  Routing='PropanAutomatGui.ModbusSlaveTCP.WagoReadCoilsDO.16-DO-1.DO11'></Signal>
+    <Signal Description="Input bit nr 12" Input="1" Model="CDPSignal&lt;bool&gt;" Name="Bit12" Type="bool"  Routing='PropanAutomatGui.ModbusSlaveTCP.WagoReadCoilsDO.16-DO-1.DO12'></Signal>
+    <Signal Description="Input bit nr 13" Input="1" Model="CDPSignal&lt;bool&gt;" Name="Bit13" Type="bool"  Routing='PropanAutomatGui.ModbusSlaveTCP.WagoReadCoilsDO.16-DO-1.DO13'></Signal>
+    <Signal Description="Input bit nr 14" Input="1" Model="CDPSignal&lt;bool&gt;" Name="Bit14" Type="bool"  Routing='PropanAutomatGui.ModbusSlaveTCP.WagoReadCoilsDO.16-DO-1.DO14'></Signal>
+    <Signal Description="Input bit nr 15" Input="1" Model="CDPSignal&lt;bool&gt;" Name="Bit15" Type="bool"  Routing='PropanAutomatGui.ModbusSlaveTCP.WagoReadCoilsDO.16-DO-1.DO15'></Signal>
     <Signal Description="Bits of a WORD in CoDeSys 3 converted to unsigned short data type" Input="0" Model="CDPSignal&lt;unsigned short&gt;" Name="BitsToUnsignedShort" Type="unsigned short"></Signal>
   </Signals>
 

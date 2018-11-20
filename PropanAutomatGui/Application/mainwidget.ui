@@ -54,10 +54,10 @@
        <cursorShape>ArrowCursor</cursorShape>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>6</number>
       </property>
       <property name="cdpPageRouting" stdset="0">
-       <string>PropanAutomatGui.GuiIndex.BitsToUnsignedShort.Value</string>
+       <string>PropanAutomatGui.BitsToUnsignedShortConverter4.BitsToUnsignedShort.Value</string>
       </property>
       <widget class="QWidget" name="FrontPage">
        <layout class="QHBoxLayout" name="horizontalLayout_2">
@@ -677,7 +677,7 @@
                        <string>-.-</string>
                       </property>
                       <property name="cdpRouting" stdset="0">
-                       <string>PropanAutomatGui.StatusSmallComposite.BitsToUnsignedShort.Value</string>
+                       <string>PropanAutomatGui.BitsToUnsignedShortConverter.BitsToUnsignedShort.Value</string>
                       </property>
                      </widget>
                     </item>
@@ -719,7 +719,7 @@
                        <string>-.-</string>
                       </property>
                       <property name="cdpRouting" stdset="0">
-                       <string>PropanAutomatGui.StatusLargeComposite.BitsToUnsignedShort.Value</string>
+                       <string>PropanAutomatGui.BitsToUnsignedShortConverter1.BitsToUnsignedShort.Value</string>
                       </property>
                      </widget>
                     </item>
@@ -767,7 +767,7 @@
                        <string>-.-</string>
                       </property>
                       <property name="cdpRouting" stdset="0">
-                       <string>PropanAutomatGui.StatusSmallMetall.BitsToUnsignedShort.Value</string>
+                       <string>PropanAutomatGui.BitsToUnsignedShortConverter2.BitsToUnsignedShort.Value</string>
                       </property>
                      </widget>
                     </item>
@@ -809,7 +809,7 @@
                        <string>-.-</string>
                       </property>
                       <property name="cdpRouting" stdset="0">
-                       <string>PropanAutomatGui.StatusLargeMetall.BitsToUnsignedShort.Value</string>
+                       <string>PropanAutomatGui.BitsToUnsignedShortConverter3.BitsToUnsignedShort.Value</string>
                       </property>
                      </widget>
                     </item>

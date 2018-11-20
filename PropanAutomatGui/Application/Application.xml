@@ -23,6 +23,7 @@
     <Subcomponent Model="PropanAutomatGuiLibrary.BitsToUnsignedShortConverter" Name="BitsToUnsignedShortConverter1" src="Components/BitsToUnsignedShortConverter1.xml"></Subcomponent>
     <Subcomponent Model="PropanAutomatGuiLibrary.BitsToUnsignedShortConverter" Name="BitsToUnsignedShortConverter2" src="Components/BitsToUnsignedShortConverter2.xml"></Subcomponent>
     <Subcomponent Model="PropanAutomatGuiLibrary.BitsToUnsignedShortConverter" Name="BitsToUnsignedShortConverter3" src="Components/BitsToUnsignedShortConverter3.xml"></Subcomponent>
+    <Subcomponent Model="PropanAutomatGuiLibrary.BitsToUnsignedShortConverter" Name="BitsToUnsignedShortConverter4" src="Components/BitsToUnsignedShortConverter4.xml"></Subcomponent>
   </Subcomponents>
 
   <Signals>
