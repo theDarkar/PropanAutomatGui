@@ -1,8 +1,8 @@
 TYPE = guiapplication
 PROJECTNAME = PropanAutomatGui
 
-DEPS += \
-    modbusio
+DEPS += modbusio \
+    propanautomatguilibrary
 
 HEADERS += Libraries.h
 SOURCES += CDPMain.cpp

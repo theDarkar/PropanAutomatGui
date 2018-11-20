@@ -8,7 +8,7 @@
   <OStimeInterval>120</OStimeInterval>
   <Domain>PropanAutomatGui</Domain>
 
-  <NetworkInterface Name="ETH0" MAC="" IPAddress="158.38.140.2" SubnetMask="255.255.254.0"  Gateway='0.0.0.0'></NetworkInterface>
+  <NetworkInterface Name="ETH0" MAC="" IPAddress="127.0.0.1" SubnetMask="255.255.255.255"  Gateway='0.0.0.0'></NetworkInterface>
 
   <CDPMessages>
     <TimestampLocal>1</TimestampLocal>
@@ -19,6 +19,10 @@
     <Subcomponent Name="CDP"                Model="CDP"               src="Components\CDP.xml"></Subcomponent>
     <Subcomponent Name="CDP2Qt"             Model="CDP2Qt"            src="Components\CDP2Qt.xml"></Subcomponent>
     <Subcomponent Model="ModbusIO.ModbusSlaveTCP" Name="ModbusSlaveTCP" src="Components/ModbusSlaveTCP.xml"></Subcomponent>
+    <Subcomponent Model="PropanAutomatGuiLibrary.BitsToUnsignedShortConverter" Name="BitsToUnsignedShortConverter" src="Components/BitsToUnsignedShortConverter.xml"></Subcomponent>
+    <Subcomponent Model="PropanAutomatGuiLibrary.BitsToUnsignedShortConverter" Name="BitsToUnsignedShortConverter1" src="Components/BitsToUnsignedShortConverter1.xml"></Subcomponent>
+    <Subcomponent Model="PropanAutomatGuiLibrary.BitsToUnsignedShortConverter" Name="BitsToUnsignedShortConverter2" src="Components/BitsToUnsignedShortConverter2.xml"></Subcomponent>
+    <Subcomponent Model="PropanAutomatGuiLibrary.BitsToUnsignedShortConverter" Name="BitsToUnsignedShortConverter3" src="Components/BitsToUnsignedShortConverter3.xml"></Subcomponent>
   </Subcomponents>
 
   <Signals>
@@ -37,7 +41,8 @@
     <Alarm Name='Component Suspended'   Level='Warning' Enabled='1' Trig='0'  Text='Component was suspended!' Description='The component was suspended!' ></Alarm>
   </Alarms>
 
-  <Parameters></Parameters>
+  <Parameters>
+    <Parameter Name="CDPParameter"  Description=''  Max='0'  Min='0'  PreviousValue='0'  Routing=''  Type='double'  Unit=''  Value='0'></Parameter></Parameters>
   
 
 </Application>

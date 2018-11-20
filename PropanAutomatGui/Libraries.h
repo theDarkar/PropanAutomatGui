@@ -6,3 +6,4 @@
 #include <StudioAPIServerLib.h>
 #include <automation.h>
 #include <modbusio.h>
+#include <propanautomatguilibrary.h>

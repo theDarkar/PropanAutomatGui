@@ -57,7 +57,7 @@
        <number>0</number>
       </property>
       <property name="cdpPageRouting" stdset="0">
-       <string>PropanAutomatGui.ModbusSlaveTCP.WagoReadRegisterAO.8-AO-short.AO4.Value</string>
+       <string>PropanAutomatGui.GuiIndex.BitsToUnsignedShort.Value</string>
       </property>
       <widget class="QWidget" name="FrontPage">
        <layout class="QHBoxLayout" name="horizontalLayout_2">
@@ -677,7 +677,7 @@
                        <string>-.-</string>
                       </property>
                       <property name="cdpRouting" stdset="0">
-                       <string>PropanAutomatGui.ModbusSlaveTCP.WagoReadRegisterAO.8-AO-short.AO0.Value</string>
+                       <string>PropanAutomatGui.StatusSmallComposite.BitsToUnsignedShort.Value</string>
                       </property>
                      </widget>
                     </item>
@@ -719,7 +719,7 @@
                        <string>-.-</string>
                       </property>
                       <property name="cdpRouting" stdset="0">
-                       <string>PropanAutomatGui.ModbusSlaveTCP.WagoReadRegisterAO.8-AO-short.AO1.Value</string>
+                       <string>PropanAutomatGui.StatusLargeComposite.BitsToUnsignedShort.Value</string>
                       </property>
                      </widget>
                     </item>
@@ -767,7 +767,7 @@
                        <string>-.-</string>
                       </property>
                       <property name="cdpRouting" stdset="0">
-                       <string>PropanAutomatGui.ModbusSlaveTCP.WagoReadRegisterAO.8-AO-short.AO2.Value</string>
+                       <string>PropanAutomatGui.StatusSmallMetall.BitsToUnsignedShort.Value</string>
                       </property>
                      </widget>
                     </item>
@@ -809,7 +809,7 @@
                        <string>-.-</string>
                       </property>
                       <property name="cdpRouting" stdset="0">
-                       <string>PropanAutomatGui.ModbusSlaveTCP.WagoReadRegisterAO.8-AO-short.AO3.Value</string>
+                       <string>PropanAutomatGui.StatusLargeMetall.BitsToUnsignedShort.Value</string>
                       </property>
                      </widget>
                     </item>
