@@ -19,11 +19,8 @@
     <Subcomponent Name="CDP"                Model="CDP"               src="Components\CDP.xml"></Subcomponent>
     <Subcomponent Name="CDP2Qt"             Model="CDP2Qt"            src="Components\CDP2Qt.xml"></Subcomponent>
     <Subcomponent Model="ModbusIO.ModbusSlaveTCP" Name="ModbusSlaveTCP" src="Components/ModbusSlaveTCP.xml"></Subcomponent>
-    <Subcomponent Model="PropanAutomatGuiLibrary.BitsToUnsignedShortConverter" Name="BitsToUnsignedShortConverter" src="Components/BitsToUnsignedShortConverter.xml"></Subcomponent>
-    <Subcomponent Model="PropanAutomatGuiLibrary.BitsToUnsignedShortConverter" Name="BitsToUnsignedShortConverter1" src="Components/BitsToUnsignedShortConverter1.xml"></Subcomponent>
-    <Subcomponent Model="PropanAutomatGuiLibrary.BitsToUnsignedShortConverter" Name="BitsToUnsignedShortConverter2" src="Components/BitsToUnsignedShortConverter2.xml"></Subcomponent>
-    <Subcomponent Model="PropanAutomatGuiLibrary.BitsToUnsignedShortConverter" Name="BitsToUnsignedShortConverter3" src="Components/BitsToUnsignedShortConverter3.xml"></Subcomponent>
-    <Subcomponent Model="PropanAutomatGuiLibrary.BitsToUnsignedShortConverter" Name="BitsToUnsignedShortConverter4" src="Components/BitsToUnsignedShortConverter4.xml"></Subcomponent>
+    <Subcomponent Model="ModbusIO.ModbusMasterTCP" Name="ModbusMasterTCP" src="Components/ModbusMasterTCP.xml"></Subcomponent>
+    <Subcomponent Model="PropanAutomatGuiLibrary.CodePanel" Name="CodePanel" src="Components/CodePanel.xml"></Subcomponent>
   </Subcomponents>
 
   <Signals>

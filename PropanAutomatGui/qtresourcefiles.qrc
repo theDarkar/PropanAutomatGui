@@ -1,10 +1,11 @@
 <RCC>
     <qresource prefix="/">
         <file>warning-147699_1280.png</file>
-        <file>Liten kompositt propan tank.jpg</file>
-        <file>Liten metall propan tank.jpg</file>
-        <file>Stor kompositt propan tank.jpg</file>
-        <file>Stor metall propan tank.jpg</file>
         <file>Error_icon.png</file>
+        <file>Liten kompositt propan tank.png</file>
+        <file>Liten metall propan tank.png</file>
+        <file>Stor kompositt propan tank.png</file>
+        <file>Stor metall propan tank.png</file>
+        <file>vendanor-propan-automat.png</file>
     </qresource>
 </RCC>

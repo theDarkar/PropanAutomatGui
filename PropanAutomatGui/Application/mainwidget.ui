@@ -17,7 +17,7 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>Main Window</string>
+   <string>Propan Automat GUI</string>
   </property>
   <property name="msgBoxBgSvg">
    <string>:/themes/cdp_light/backgrounds/bgMsgBox.svg</string>
@@ -57,15 +57,24 @@
        <number>6</number>
       </property>
       <property name="cdpPageRouting" stdset="0">
-       <string>PropanAutomatGui.BitsToUnsignedShortConverter4.BitsToUnsignedShort.Value</string>
+       <string>PropanAutomatGui.ModbusMasterTCP.GuiIndexConverter.Output.Value</string>
       </property>
       <widget class="QWidget" name="FrontPage">
        <layout class="QHBoxLayout" name="horizontalLayout_2">
         <item>
          <widget class="CDPBaseContainer" name="userBaseContainer">
+          <property name="styleSheet">
+           <string notr="true">color: rgb(255, 255, 255);</string>
+          </property>
           <layout class="QVBoxLayout" name="verticalLayout">
            <item>
             <widget class="CDPBaseLabel" name="cdpBaseLabel">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>100</height>
+              </size>
+             </property>
              <property name="font">
               <font>
                <family>Arial</family>
@@ -74,6 +83,13 @@
              </property>
              <property name="text">
               <string>Propan Automat</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="widget_28" native="true">
+             <property name="styleSheet">
+              <string notr="true">image: url(:/vendanor-propan-automat.png);</string>
              </property>
             </widget>
            </item>
@@ -102,7 +118,7 @@
               <number>2</number>
              </property>
              <property name="cdpPressedRouting" stdset="0">
-              <string>PropanAutomatGui.ModbusSlaveTCP.WagoWriteCoilsDI.8-DI.DI4.Value</string>
+              <string>PropanAutomatGui.ModbusSlaveTCP.WagoWriteCoilsDI.8-DI0.DI4.Value</string>
              </property>
             </widget>
            </item>
@@ -216,7 +232,7 @@
                     <string>:/themes/cdp_light/buttons/buttonPlain.svg</string>
                    </property>
                    <property name="cdpPressedRouting" stdset="0">
-                    <string>PropanAutomatGui.ModbusSlaveTCP.WagoWriteCoilsDI.8-DI.DI0.Value</string>
+                    <string>PropanAutomatGui.ModbusSlaveTCP.WagoWriteCoilsDI.8-DI0.DI0.Value</string>
                    </property>
                   </widget>
                  </item>
@@ -229,7 +245,7 @@
                     <string>:/themes/cdp_light/buttons/buttonPlain.svg</string>
                    </property>
                    <property name="cdpPressedRouting" stdset="0">
-                    <string>PropanAutomatGui.ModbusSlaveTCP.WagoWriteCoilsDI.8-DI.DI1.Value</string>
+                    <string>PropanAutomatGui.ModbusSlaveTCP.WagoWriteCoilsDI.8-DI0.DI1.Value</string>
                    </property>
                   </widget>
                  </item>
@@ -242,7 +258,7 @@
                     <string>:/themes/cdp_light/buttons/buttonPlain.svg</string>
                    </property>
                    <property name="cdpPressedRouting" stdset="0">
-                    <string>PropanAutomatGui.ModbusSlaveTCP.WagoWriteCoilsDI.8-DI.DI2.Value</string>
+                    <string>PropanAutomatGui.ModbusSlaveTCP.WagoWriteCoilsDI.8-DI0.DI2.Value</string>
                    </property>
                   </widget>
                  </item>
@@ -255,7 +271,7 @@
                     <string>:/themes/cdp_light/buttons/buttonPlain.svg</string>
                    </property>
                    <property name="cdpPressedRouting" stdset="0">
-                    <string>PropanAutomatGui.ModbusSlaveTCP.WagoWriteCoilsDI.8-DI.DI3.Value</string>
+                    <string>PropanAutomatGui.ModbusSlaveTCP.WagoWriteCoilsDI.8-DI0.DI3.Value</string>
                    </property>
                   </widget>
                  </item>
@@ -326,7 +342,9 @@
               <item>
                <widget class="CDPBaseLabel" name="cdpBaseLabel_4">
                 <property name="text">
-                 <string>Sett inn tom tank</string>
+                 <string>Sett inn tom tank og lukk døren.
+
+Om du ønsker å avbryte, lukk døren.</string>
                 </property>
                </widget>
               </item>
@@ -361,7 +379,7 @@
                     <string>:/themes/cdp_light/buttons/buttonPlain.svg</string>
                    </property>
                    <property name="cdpPressedRouting" stdset="0">
-                    <string>PropanAutomatGui.ModbusSlaveTCP.WagoWriteCoilsDI.8-DI.DI5.Value</string>
+                    <string>PropanAutomatGui.ModbusSlaveTCP.WagoWriteCoilsDI.8-DI0.DI5.Value</string>
                    </property>
                   </widget>
                  </item>
@@ -413,7 +431,7 @@
                     <string/>
                    </property>
                    <property name="cdpPressedRouting" stdset="0">
-                    <string>PropanAutomatGui.ModbusSlaveTCP.WagoWriteCoilsDI.8-DI.DI0.Value</string>
+                    <string>PropanAutomatGui.ModbusSlaveTCP.WagoWriteCoilsDI.8-DI0.DI0.Value</string>
                    </property>
                   </widget>
                  </item>
@@ -429,7 +447,7 @@
                     <string/>
                    </property>
                    <property name="cdpPressedRouting" stdset="0">
-                    <string>PropanAutomatGui.ModbusSlaveTCP.WagoWriteCoilsDI.8-DI.DI1.Value</string>
+                    <string>PropanAutomatGui.ModbusSlaveTCP.WagoWriteCoilsDI.8-DI0.DI1.Value</string>
                    </property>
                   </widget>
                  </item>
@@ -445,7 +463,7 @@
                     <string/>
                    </property>
                    <property name="cdpPressedRouting" stdset="0">
-                    <string>PropanAutomatGui.ModbusSlaveTCP.WagoWriteCoilsDI.8-DI.DI2.Value</string>
+                    <string>PropanAutomatGui.ModbusSlaveTCP.WagoWriteCoilsDI.8-DI0.DI2.Value</string>
                    </property>
                   </widget>
                  </item>
@@ -461,7 +479,7 @@
                     <string/>
                    </property>
                    <property name="cdpPressedRouting" stdset="0">
-                    <string>PropanAutomatGui.ModbusSlaveTCP.WagoWriteCoilsDI.8-DI.DI3.Value</string>
+                    <string>PropanAutomatGui.ModbusSlaveTCP.WagoWriteCoilsDI.8-DI0.DI3.Value</string>
                    </property>
                   </widget>
                  </item>
@@ -502,7 +520,7 @@
                     <string/>
                    </property>
                    <property name="cdpPressedRouting" stdset="0">
-                    <string>PropanAutomatGui.ModbusSlaveTCP.WagoWriteCoilsDI.8-DI.DI5.Value</string>
+                    <string>PropanAutomatGui.ModbusSlaveTCP.WagoWriteCoilsDI.8-DI0.DI5.Value</string>
                    </property>
                   </widget>
                  </item>
@@ -583,6 +601,12 @@
               </item>
               <item>
                <widget class="CDPBaseButton" name="cdpBaseButton">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>40</height>
+                 </size>
+                </property>
                 <property name="text">
                  <string>Åpne alle dører</string>
                 </property>
@@ -590,32 +614,162 @@
                  <string>:/themes/cdp_light/buttons/buttonPlain.svg</string>
                 </property>
                 <property name="cdpPressedRouting" stdset="0">
-                 <string>PropanAutomatGui.ModbusSlaveTCP.WagoWriteCoilsDI.8-DI.DI6.Value</string>
+                 <string>PropanAutomatGui.ModbusSlaveTCP.WagoWriteCoilsDI.8-DI0.DI6.Value</string>
                 </property>
                </widget>
               </item>
               <item>
                <widget class="CDPBaseButton" name="cdpBaseButton_2">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>40</height>
+                 </size>
+                </property>
                 <property name="text">
-                 <string>Roter til neste posisjon</string>
+                 <string>Tøm alle tomme flasker</string>
                 </property>
                 <property name="svgFile">
                  <string>:/themes/cdp_light/buttons/buttonPlain.svg</string>
                 </property>
                 <property name="cdpPressedRouting" stdset="0">
-                 <string>PropanAutomatGui.ModbusSlaveTCP.WagoWriteCoilsDI.8-DI.DI7.Value</string>
+                 <string>PropanAutomatGui.ModbusSlaveTCP.WagoWriteCoilsDI.8-DI0.DI7.Value</string>
                 </property>
                </widget>
               </item>
               <item>
-               <spacer name="verticalSpacer_2">
+               <widget class="CDPBaseButton" name="cdpBaseButton_29">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>Roter venstre karusell
+med klokka</string>
+                </property>
+                <property name="svgFile">
+                 <string>:/themes/cdp_light/buttons/buttonPlain.svg</string>
+                </property>
+                <property name="cdpPressedRouting" stdset="0">
+                 <string>PropanAutomatGui.ModbusSlaveTCP.WagoWriteCoilsDI.8-DI1.DI0.Value</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="CDPBaseButton" name="cdpBaseButton_31">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>Roter venstre karusell
+mot klokka</string>
+                </property>
+                <property name="svgFile">
+                 <string>:/themes/cdp_light/buttons/buttonPlain.svg</string>
+                </property>
+                <property name="cdpPressedRouting" stdset="0">
+                 <string>PropanAutomatGui.ModbusSlaveTCP.WagoWriteCoilsDI.8-DI1.DI1.Value</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="CDPBaseButton" name="cdpBaseButton_32">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>Roter høgre karusell
+med klokka</string>
+                </property>
+                <property name="svgFile">
+                 <string>:/themes/cdp_light/buttons/buttonPlain.svg</string>
+                </property>
+                <property name="cdpPressedRouting" stdset="0">
+                 <string>PropanAutomatGui.ModbusSlaveTCP.WagoWriteCoilsDI.8-DI1.DI2.Value</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="CDPBaseButton" name="cdpBaseButton_36">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>Roter høgre karusell
+mot klokka</string>
+                </property>
+                <property name="svgFile">
+                 <string>:/themes/cdp_light/buttons/buttonPlain.svg</string>
+                </property>
+                <property name="cdpPressedRouting" stdset="0">
+                 <string>PropanAutomatGui.ModbusSlaveTCP.WagoWriteCoilsDI.8-DI1.DI3.Value</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="CDPBaseLabel" name="cdpBaseLabel_26">
+                <property name="text">
+                 <string>Lagerstatus
+kontroller</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="CDPBaseButton" name="cdpBaseButton_37">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>40</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>Vis status for fulle flasker</string>
+                </property>
+                <property name="svgFile">
+                 <string>:/themes/cdp_light/buttons/buttonPlain.svg</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="CDPBaseButton" name="cdpBaseButton_38">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>50</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>Vis status for tomme
+flasker</string>
+                </property>
+                <property name="svgFile">
+                 <string>:/themes/cdp_light/buttons/buttonPlain.svg</string>
+                </property>
+                <property name="valueToEmit">
+                 <number>1</number>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="verticalSpacer_3">
                 <property name="orientation">
                  <enum>Qt::Vertical</enum>
                 </property>
                 <property name="sizeHint" stdset="0">
                  <size>
                   <width>20</width>
-                  <height>40</height>
+                  <height>10</height>
                  </size>
                 </property>
                </spacer>
@@ -628,6 +782,9 @@
                 <property name="svgFile">
                  <string>:/themes/cdp_light/buttons/buttonPlain.svg</string>
                 </property>
+                <property name="cdpPressedRouting" stdset="0">
+                 <string>PropanAutomatGui.CodePanel.Reset.Value</string>
+                </property>
                </widget>
               </item>
              </layout>
@@ -636,187 +793,417 @@
            <item>
             <widget class="QGroupBox" name="groupBox">
              <property name="title">
-              <string>LagerStatus:</string>
+              <string>Lagerstatus:</string>
              </property>
              <layout class="QVBoxLayout" name="verticalLayout_17">
               <item>
-               <widget class="QWidget" name="widget_11" native="true">
-                <layout class="QHBoxLayout" name="horizontalLayout_5">
-                 <item>
-                  <widget class="QWidget" name="widget_15" native="true">
-                   <layout class="QVBoxLayout" name="verticalLayout_19">
-                    <item>
-                     <widget class="QWidget" name="widget_24" native="true">
-                      <property name="styleSheet">
-                       <string notr="true">image: url(:/Liten kompositt propan tank.jpg);</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="CDPBaseLabel" name="cdpBaseLabel_12">
-                      <property name="maximumSize">
-                       <size>
-                        <width>16777215</width>
-                        <height>20</height>
-                       </size>
-                      </property>
-                      <property name="text">
-                       <string>Liten kompositt</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="CDPBaseLabel" name="cdpBaseLabel_13">
-                      <property name="maximumSize">
-                       <size>
-                        <width>16777215</width>
-                        <height>20</height>
-                       </size>
-                      </property>
-                      <property name="text">
-                       <string>-.-</string>
-                      </property>
-                      <property name="cdpRouting" stdset="0">
-                       <string>PropanAutomatGui.BitsToUnsignedShortConverter.BitsToUnsignedShort.Value</string>
-                      </property>
-                     </widget>
-                    </item>
-                   </layout>
-                  </widget>
-                 </item>
-                 <item>
-                  <widget class="QWidget" name="widget_16" native="true">
-                   <layout class="QVBoxLayout" name="verticalLayout_18">
-                    <item>
-                     <widget class="QWidget" name="widget_25" native="true">
-                      <property name="styleSheet">
-                       <string notr="true">image: url(:/Stor kompositt propan tank.jpg);</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="CDPBaseLabel" name="cdpBaseLabel_15">
-                      <property name="maximumSize">
-                       <size>
-                        <width>16777215</width>
-                        <height>20</height>
-                       </size>
-                      </property>
-                      <property name="text">
-                       <string>Stor kompositt</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="CDPBaseLabel" name="cdpBaseLabel_14">
-                      <property name="maximumSize">
-                       <size>
-                        <width>16777215</width>
-                        <height>20</height>
-                       </size>
-                      </property>
-                      <property name="text">
-                       <string>-.-</string>
-                      </property>
-                      <property name="cdpRouting" stdset="0">
-                       <string>PropanAutomatGui.BitsToUnsignedShortConverter1.BitsToUnsignedShort.Value</string>
-                      </property>
-                     </widget>
-                    </item>
-                   </layout>
-                  </widget>
-                 </item>
-                </layout>
-               </widget>
-              </item>
-              <item>
-               <widget class="QWidget" name="widget_13" native="true">
-                <layout class="QHBoxLayout" name="horizontalLayout_15">
-                 <item>
-                  <widget class="QWidget" name="widget_17" native="true">
-                   <layout class="QVBoxLayout" name="verticalLayout_20">
-                    <item>
-                     <widget class="QWidget" name="widget_26" native="true">
-                      <property name="styleSheet">
-                       <string notr="true">image: url(:/Liten metall propan tank.jpg);</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="CDPBaseLabel" name="cdpBaseLabel_16">
-                      <property name="maximumSize">
-                       <size>
-                        <width>16777215</width>
-                        <height>20</height>
-                       </size>
-                      </property>
-                      <property name="text">
-                       <string>Liten metall</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="CDPBaseLabel" name="cdpBaseLabel_17">
-                      <property name="maximumSize">
-                       <size>
-                        <width>16777215</width>
-                        <height>20</height>
-                       </size>
-                      </property>
-                      <property name="text">
-                       <string>-.-</string>
-                      </property>
-                      <property name="cdpRouting" stdset="0">
-                       <string>PropanAutomatGui.BitsToUnsignedShortConverter2.BitsToUnsignedShort.Value</string>
-                      </property>
-                     </widget>
-                    </item>
-                   </layout>
-                  </widget>
-                 </item>
-                 <item>
-                  <widget class="QWidget" name="widget_18" native="true">
-                   <layout class="QVBoxLayout" name="verticalLayout_21">
-                    <item>
-                     <widget class="QWidget" name="widget_27" native="true">
-                      <property name="styleSheet">
-                       <string notr="true">image: url(:/Stor metall propan tank.jpg);</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="CDPBaseLabel" name="cdpBaseLabel_18">
-                      <property name="maximumSize">
-                       <size>
-                        <width>16777215</width>
-                        <height>20</height>
-                       </size>
-                      </property>
-                      <property name="text">
-                       <string>Stor metall</string>
-                      </property>
-                     </widget>
-                    </item>
-                    <item>
-                     <widget class="CDPBaseLabel" name="cdpBaseLabel_19">
-                      <property name="maximumSize">
-                       <size>
-                        <width>16777215</width>
-                        <height>20</height>
-                       </size>
-                      </property>
-                      <property name="text">
-                       <string>-.-</string>
-                      </property>
-                      <property name="cdpRouting" stdset="0">
-                       <string>PropanAutomatGui.BitsToUnsignedShortConverter3.BitsToUnsignedShort.Value</string>
-                      </property>
-                     </widget>
-                    </item>
-                   </layout>
-                  </widget>
-                 </item>
-                </layout>
+               <widget class="CDPBaseStackedWidget" name="cdpBaseStackedWidget_2">
+                <property name="currentIndex">
+                 <number>0</number>
+                </property>
+                <widget class="QWidget" name="StatusFullCanistersPage">
+                 <layout class="QVBoxLayout" name="verticalLayout_25">
+                  <item>
+                   <widget class="CDPBaseLabel" name="cdpBaseLabel_36">
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string>Fulle Propan Flasker:</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QWidget" name="widget_11" native="true">
+                    <layout class="QHBoxLayout" name="horizontalLayout_5">
+                     <item>
+                      <widget class="QWidget" name="widget_15" native="true">
+                       <layout class="QVBoxLayout" name="verticalLayout_19">
+                        <item>
+                         <widget class="QWidget" name="widget_24" native="true">
+                          <property name="styleSheet">
+                           <string notr="true">image: url(:/Liten kompositt propan tank.png);</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="CDPBaseLabel" name="cdpBaseLabel_12">
+                          <property name="maximumSize">
+                           <size>
+                            <width>16777215</width>
+                            <height>20</height>
+                           </size>
+                          </property>
+                          <property name="text">
+                           <string>Liten kompositt</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="CDPBaseLabel" name="cdpBaseLabel_13">
+                          <property name="maximumSize">
+                           <size>
+                            <width>16777215</width>
+                            <height>20</height>
+                           </size>
+                          </property>
+                          <property name="text">
+                           <string>-.-</string>
+                          </property>
+                          <property name="cdpRouting" stdset="0">
+                           <string>PropanAutomatGui.ModbusMasterTCP.StatusFullSmallCompositeConverter.Output.Value</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QWidget" name="widget_16" native="true">
+                       <layout class="QVBoxLayout" name="verticalLayout_18">
+                        <item>
+                         <widget class="QWidget" name="widget_25" native="true">
+                          <property name="styleSheet">
+                           <string notr="true">image: url(:/Stor kompositt propan tank.png);</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="CDPBaseLabel" name="cdpBaseLabel_15">
+                          <property name="maximumSize">
+                           <size>
+                            <width>16777215</width>
+                            <height>20</height>
+                           </size>
+                          </property>
+                          <property name="text">
+                           <string>Stor kompositt</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="CDPBaseLabel" name="cdpBaseLabel_14">
+                          <property name="maximumSize">
+                           <size>
+                            <width>16777215</width>
+                            <height>20</height>
+                           </size>
+                          </property>
+                          <property name="text">
+                           <string>-.-</string>
+                          </property>
+                          <property name="cdpRouting" stdset="0">
+                           <string>PropanAutomatGui.ModbusMasterTCP.StatusFullLargeCompositeConverter.Output.Value</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QWidget" name="widget_13" native="true">
+                    <layout class="QHBoxLayout" name="horizontalLayout_15">
+                     <item>
+                      <widget class="QWidget" name="widget_17" native="true">
+                       <layout class="QVBoxLayout" name="verticalLayout_20">
+                        <item>
+                         <widget class="QWidget" name="widget_26" native="true">
+                          <property name="styleSheet">
+                           <string notr="true">image: url(:/Liten metall propan tank.png);</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="CDPBaseLabel" name="cdpBaseLabel_16">
+                          <property name="maximumSize">
+                           <size>
+                            <width>16777215</width>
+                            <height>20</height>
+                           </size>
+                          </property>
+                          <property name="text">
+                           <string>Liten metall</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="CDPBaseLabel" name="cdpBaseLabel_17">
+                          <property name="maximumSize">
+                           <size>
+                            <width>16777215</width>
+                            <height>20</height>
+                           </size>
+                          </property>
+                          <property name="text">
+                           <string>-.-</string>
+                          </property>
+                          <property name="cdpRouting" stdset="0">
+                           <string>PropanAutomatGui.ModbusMasterTCP.StatusFullSmallMetalConverter.Output.Value</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QWidget" name="widget_18" native="true">
+                       <layout class="QVBoxLayout" name="verticalLayout_21">
+                        <item>
+                         <widget class="QWidget" name="widget_27" native="true">
+                          <property name="styleSheet">
+                           <string notr="true">image: url(:/Stor metall propan tank.png);</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="CDPBaseLabel" name="cdpBaseLabel_18">
+                          <property name="maximumSize">
+                           <size>
+                            <width>16777215</width>
+                            <height>20</height>
+                           </size>
+                          </property>
+                          <property name="text">
+                           <string>Stor metall</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="CDPBaseLabel" name="cdpBaseLabel_19">
+                          <property name="maximumSize">
+                           <size>
+                            <width>16777215</width>
+                            <height>20</height>
+                           </size>
+                          </property>
+                          <property name="text">
+                           <string>-.-</string>
+                          </property>
+                          <property name="cdpRouting" stdset="0">
+                           <string>PropanAutomatGui.ModbusMasterTCP.StatusFullLargeMetalConverter.Output.Value</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+                <widget class="QWidget" name="StatusEmptyCanistersPage">
+                 <layout class="QVBoxLayout" name="verticalLayout_30">
+                  <item>
+                   <widget class="CDPBaseLabel" name="cdpBaseLabel_35">
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                    <property name="layoutDirection">
+                     <enum>Qt::LeftToRight</enum>
+                    </property>
+                    <property name="text">
+                     <string>Tomme Propan Flasker:</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QWidget" name="widget_32" native="true">
+                    <layout class="QHBoxLayout" name="horizontalLayout_32">
+                     <item>
+                      <widget class="QWidget" name="widget_35" native="true">
+                       <layout class="QVBoxLayout" name="verticalLayout_26">
+                        <item>
+                         <widget class="QWidget" name="widget_37" native="true">
+                          <property name="styleSheet">
+                           <string notr="true">image: url(:/Liten kompositt propan tank.png);</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="CDPBaseLabel" name="cdpBaseLabel_27">
+                          <property name="maximumSize">
+                           <size>
+                            <width>16777215</width>
+                            <height>20</height>
+                           </size>
+                          </property>
+                          <property name="text">
+                           <string>Liten kompositt</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="CDPBaseLabel" name="cdpBaseLabel_28">
+                          <property name="maximumSize">
+                           <size>
+                            <width>16777215</width>
+                            <height>20</height>
+                           </size>
+                          </property>
+                          <property name="text">
+                           <string>-.-</string>
+                          </property>
+                          <property name="cdpRouting" stdset="0">
+                           <string>PropanAutomatGui.ModbusMasterTCP.StatusEmptySmallCompositeConverter.Output.Value</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QWidget" name="widget_38" native="true">
+                       <layout class="QVBoxLayout" name="verticalLayout_27">
+                        <item>
+                         <widget class="QWidget" name="widget_39" native="true">
+                          <property name="styleSheet">
+                           <string notr="true">image: url(:/Stor kompositt propan tank.png);</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="CDPBaseLabel" name="cdpBaseLabel_29">
+                          <property name="maximumSize">
+                           <size>
+                            <width>16777215</width>
+                            <height>20</height>
+                           </size>
+                          </property>
+                          <property name="text">
+                           <string>Stor kompositt</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="CDPBaseLabel" name="cdpBaseLabel_30">
+                          <property name="maximumSize">
+                           <size>
+                            <width>16777215</width>
+                            <height>20</height>
+                           </size>
+                          </property>
+                          <property name="text">
+                           <string>-.-</string>
+                          </property>
+                          <property name="cdpRouting" stdset="0">
+                           <string>PropanAutomatGui.ModbusMasterTCP.StatusEmptyLargeCompositeConverter.Output.Value</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QWidget" name="widget_40" native="true">
+                    <layout class="QHBoxLayout" name="horizontalLayout_34">
+                     <item>
+                      <widget class="QWidget" name="widget_41" native="true">
+                       <layout class="QVBoxLayout" name="verticalLayout_28">
+                        <item>
+                         <widget class="QWidget" name="widget_42" native="true">
+                          <property name="styleSheet">
+                           <string notr="true">image: url(:/Liten metall propan tank.png);</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="CDPBaseLabel" name="cdpBaseLabel_31">
+                          <property name="maximumSize">
+                           <size>
+                            <width>16777215</width>
+                            <height>20</height>
+                           </size>
+                          </property>
+                          <property name="text">
+                           <string>Liten metall</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="CDPBaseLabel" name="cdpBaseLabel_32">
+                          <property name="maximumSize">
+                           <size>
+                            <width>16777215</width>
+                            <height>20</height>
+                           </size>
+                          </property>
+                          <property name="text">
+                           <string>-.-</string>
+                          </property>
+                          <property name="cdpRouting" stdset="0">
+                           <string>PropanAutomatGui.ModbusMasterTCP.StatusEmptySmallMetalConverter.Output.Value</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QWidget" name="widget_43" native="true">
+                       <layout class="QVBoxLayout" name="verticalLayout_29">
+                        <item>
+                         <widget class="QWidget" name="widget_44" native="true">
+                          <property name="styleSheet">
+                           <string notr="true">image: url(:/Stor metall propan tank.png);</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="CDPBaseLabel" name="cdpBaseLabel_33">
+                          <property name="maximumSize">
+                           <size>
+                            <width>16777215</width>
+                            <height>20</height>
+                           </size>
+                          </property>
+                          <property name="text">
+                           <string>Stor metall</string>
+                          </property>
+                         </widget>
+                        </item>
+                        <item>
+                         <widget class="CDPBaseLabel" name="cdpBaseLabel_34">
+                          <property name="maximumSize">
+                           <size>
+                            <width>16777215</width>
+                            <height>20</height>
+                           </size>
+                          </property>
+                          <property name="text">
+                           <string>-.-</string>
+                          </property>
+                          <property name="cdpRouting" stdset="0">
+                           <string>PropanAutomatGui.ModbusMasterTCP.StatusEmptyLargeMetalConverter.Output.Value</string>
+                          </property>
+                         </widget>
+                        </item>
+                       </layout>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
                </widget>
               </item>
              </layout>
@@ -836,18 +1223,9 @@
             <widget class="QWidget" name="widget_2" native="true">
              <property name="minimumSize">
               <size>
-               <width>200</width>
+               <width>0</width>
                <height>200</height>
               </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>16777215</width>
-               <height>200</height>
-              </size>
-             </property>
-             <property name="autoFillBackground">
-              <bool>false</bool>
              </property>
              <property name="styleSheet">
               <string notr="true">image: url(:/Error_icon.png);</string>
@@ -917,10 +1295,26 @@
              <property name="styleSheet">
               <string notr="true">image: url(:/Error_icon.png);</string>
              </property>
+             <widget class="CDPBaseLostRoutingsLabel" name="CDPBaseLostRoutingsLabel">
+              <property name="geometry">
+               <rect>
+                <x>-50</x>
+                <y>320</y>
+                <width>964</width>
+                <height>307</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="textNoLostRoutings">
+               <string/>
+              </property>
+             </widget>
             </widget>
            </item>
            <item>
-            <widget class="CDPBaseLostRoutingsLabel" name="CDPBaseLostRoutingsLabel">
+            <widget class="CDPBaseLabel" name="cdpBaseLabel_25">
              <property name="text">
               <string>Produkt ikkje på lager</string>
              </property>
@@ -988,6 +1382,7 @@
             <widget class="CDPBaseLabel" name="cdpBaseLabel_11">
              <property name="text">
               <string>Ein uventa feil har hendt.
+
 Vennligst vent på autorisert personell.</string>
              </property>
             </widget>
@@ -1137,6 +1532,300 @@ Vennligst vent på autorisert personell.</string>
         </item>
        </layout>
       </widget>
+      <widget class="QWidget" name="LoginPage">
+       <layout class="QHBoxLayout" name="horizontalLayout_27">
+        <item>
+         <widget class="CDPBaseContainer" name="cdpBaseContainer_13">
+          <layout class="QVBoxLayout" name="verticalLayout_9">
+           <item>
+            <widget class="QWidget" name="widget_30" native="true">
+             <layout class="QVBoxLayout" name="verticalLayout_24">
+              <item>
+               <widget class="QWidget" name="widget_33" native="true">
+                <layout class="QHBoxLayout" name="horizontalLayout_31">
+                 <item>
+                  <widget class="CDPBaseButton" name="cdpBaseButton_23">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>100</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>1</string>
+                   </property>
+                   <property name="svgFile">
+                    <string>:/themes/cdp_light/buttons/buttonPlain.svg</string>
+                   </property>
+                   <property name="cdpPressedRouting" stdset="0">
+                    <string>PropanAutomatGui.CodePanel.Digit1.Value</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="CDPBaseButton" name="cdpBaseButton_24">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>100</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>2</string>
+                   </property>
+                   <property name="svgFile">
+                    <string>:/themes/cdp_light/buttons/buttonPlain.svg</string>
+                   </property>
+                   <property name="cdpPressedRouting" stdset="0">
+                    <string>PropanAutomatGui.CodePanel.Digit2.Value</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="CDPBaseButton" name="cdpBaseButton_25">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>100</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>3</string>
+                   </property>
+                   <property name="svgFile">
+                    <string>:/themes/cdp_light/buttons/buttonPlain.svg</string>
+                   </property>
+                   <property name="cdpPressedRouting" stdset="0">
+                    <string>PropanAutomatGui.CodePanel.Digit3.Value</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QWidget" name="widget_36" native="true">
+                <layout class="QHBoxLayout" name="horizontalLayout_33">
+                 <item>
+                  <widget class="CDPBaseButton" name="cdpBaseButton_33">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>100</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>4</string>
+                   </property>
+                   <property name="svgFile">
+                    <string>:/themes/cdp_light/buttons/buttonPlain.svg</string>
+                   </property>
+                   <property name="cdpPressedRouting" stdset="0">
+                    <string>PropanAutomatGui.CodePanel.Digit4.Value</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="CDPBaseButton" name="cdpBaseButton_34">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>100</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>5</string>
+                   </property>
+                   <property name="svgFile">
+                    <string>:/themes/cdp_light/buttons/buttonPlain.svg</string>
+                   </property>
+                   <property name="cdpPressedRouting" stdset="0">
+                    <string>PropanAutomatGui.CodePanel.Digit5.Value</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="CDPBaseButton" name="cdpBaseButton_35">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>100</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>6</string>
+                   </property>
+                   <property name="svgFile">
+                    <string>:/themes/cdp_light/buttons/buttonPlain.svg</string>
+                   </property>
+                   <property name="cdpPressedRouting" stdset="0">
+                    <string>PropanAutomatGui.CodePanel.Digit6.Value</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QWidget" name="widget_29" native="true">
+                <layout class="QHBoxLayout" name="horizontalLayout_29">
+                 <item>
+                  <widget class="CDPBaseButton" name="cdpBaseButton_26">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>100</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>7</string>
+                   </property>
+                   <property name="svgFile">
+                    <string>:/themes/cdp_light/buttons/buttonPlain.svg</string>
+                   </property>
+                   <property name="cdpPressedRouting" stdset="0">
+                    <string>PropanAutomatGui.CodePanel.Digit7.Value</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="CDPBaseButton" name="cdpBaseButton_27">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>100</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>8</string>
+                   </property>
+                   <property name="svgFile">
+                    <string>:/themes/cdp_light/buttons/buttonPlain.svg</string>
+                   </property>
+                   <property name="cdpPressedRouting" stdset="0">
+                    <string>PropanAutomatGui.CodePanel.Digit8.Value</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="CDPBaseButton" name="cdpBaseButton_28">
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>100</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>9</string>
+                   </property>
+                   <property name="svgFile">
+                    <string>:/themes/cdp_light/buttons/buttonPlain.svg</string>
+                   </property>
+                   <property name="cdpPressedRouting" stdset="0">
+                    <string>PropanAutomatGui.CodePanel.Digit9.Value</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QWidget" name="widget_34" native="true">
+                <layout class="QHBoxLayout" name="horizontalLayout_30">
+                 <item>
+                  <spacer name="horizontalSpacer_11">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item>
+                  <widget class="CDPBaseButton" name="cdpBaseButton_30">
+                   <property name="minimumSize">
+                    <size>
+                     <width>300</width>
+                     <height>100</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>0</string>
+                   </property>
+                   <property name="svgFile">
+                    <string>:/themes/cdp_light/buttons/buttonPlain.svg</string>
+                   </property>
+                   <property name="cdpPressedRouting" stdset="0">
+                    <string>PropanAutomatGui.CodePanel.Digit0.Value</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <spacer name="horizontalSpacer_10">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="widget_31" native="true">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>42</height>
+              </size>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_28">
+              <item>
+               <spacer name="horizontalSpacer_9">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="CDPBaseButton" name="cdpBaseButton_22">
+                <property name="text">
+                 <string>Tilbake</string>
+                </property>
+                <property name="svgFile">
+                 <string>:/themes/cdp_light/buttons/buttonPlain.svg</string>
+                </property>
+                <property name="cdpPressedRouting" stdset="0">
+                 <string>PropanAutomatGui.CodePanel.Reset.Value</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
      </widget>
     </item>
    </layout>
@@ -1191,8 +1880,8 @@ Vennligst vent på autorisert personell.</string>
    <slot>setNightTheme(bool)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>801</x>
-     <y>64</y>
+     <x>93</x>
+     <y>20</y>
     </hint>
     <hint type="destinationlabel">
      <x>318</x>
@@ -1207,8 +1896,8 @@ Vennligst vent på autorisert personell.</string>
    <slot>setCurrentIndex(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>451</x>
-     <y>430</y>
+     <x>47</x>
+     <y>24</y>
     </hint>
     <hint type="destinationlabel">
      <x>475</x>
@@ -1223,8 +1912,8 @@ Vennligst vent på autorisert personell.</string>
    <slot>setCurrentIndex(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>219</x>
-     <y>454</y>
+     <x>47</x>
+     <y>27</y>
     </hint>
     <hint type="destinationlabel">
      <x>258</x>
@@ -1239,8 +1928,8 @@ Vennligst vent på autorisert personell.</string>
    <slot>setCurrentIndex(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>101</x>
-     <y>451</y>
+     <x>119</x>
+     <y>675</y>
     </hint>
     <hint type="destinationlabel">
      <x>130</x>
@@ -1255,8 +1944,8 @@ Vennligst vent på autorisert personell.</string>
    <slot>setCurrentIndex(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>776</x>
-     <y>459</y>
+     <x>87</x>
+     <y>30</y>
     </hint>
     <hint type="destinationlabel">
      <x>775</x>
@@ -1271,8 +1960,8 @@ Vennligst vent på autorisert personell.</string>
    <slot>setCurrentIndex(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>766</x>
-     <y>461</y>
+     <x>87</x>
+     <y>30</y>
     </hint>
     <hint type="destinationlabel">
      <x>792</x>
@@ -1287,8 +1976,8 @@ Vennligst vent på autorisert personell.</string>
    <slot>setCurrentIndex(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>704</x>
-     <y>458</y>
+     <x>87</x>
+     <y>30</y>
     </hint>
     <hint type="destinationlabel">
      <x>737</x>
@@ -1303,8 +1992,8 @@ Vennligst vent på autorisert personell.</string>
    <slot>setCurrentIndex(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>740</x>
-     <y>466</y>
+     <x>87</x>
+     <y>28</y>
     </hint>
     <hint type="destinationlabel">
      <x>777</x>
@@ -1319,8 +2008,8 @@ Vennligst vent på autorisert personell.</string>
    <slot>setCurrentIndex(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>764</x>
-     <y>462</y>
+     <x>93</x>
+     <y>26</y>
     </hint>
     <hint type="destinationlabel">
      <x>760</x>
@@ -1335,8 +2024,8 @@ Vennligst vent på autorisert personell.</string>
    <slot>setCurrentIndex(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>696</x>
-     <y>450</y>
+     <x>81</x>
+     <y>33</y>
     </hint>
     <hint type="destinationlabel">
      <x>688</x>
@@ -1351,8 +2040,8 @@ Vennligst vent på autorisert personell.</string>
    <slot>setCurrentIndex(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>758</x>
-     <y>456</y>
+     <x>81</x>
+     <y>33</y>
     </hint>
     <hint type="destinationlabel">
      <x>762</x>
@@ -1367,12 +2056,60 @@ Vennligst vent på autorisert personell.</string>
    <slot>setCurrentIndex(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>751</x>
-     <y>454</y>
+     <x>81</x>
+     <y>33</y>
     </hint>
     <hint type="destinationlabel">
      <x>752</x>
      <y>483</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cdpBaseButton_22</sender>
+   <signal>clicked(int)</signal>
+   <receiver>cdpBaseStackedWidget</receiver>
+   <slot>setCurrentIndex(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>87</x>
+     <y>28</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>909</x>
+     <y>692</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cdpBaseButton_37</sender>
+   <signal>clicked(int)</signal>
+   <receiver>cdpBaseStackedWidget_2</receiver>
+   <slot>setCurrentIndex(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>129</x>
+     <y>442</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>159</x>
+     <y>434</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cdpBaseButton_38</sender>
+   <signal>clicked(int)</signal>
+   <receiver>cdpBaseStackedWidget_2</receiver>
+   <slot>setCurrentIndex(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>129</x>
+     <y>473</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>162</x>
+     <y>479</y>
     </hint>
    </hints>
   </connection>
