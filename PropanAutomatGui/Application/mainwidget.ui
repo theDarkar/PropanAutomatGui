@@ -54,7 +54,7 @@
        <cursorShape>ArrowCursor</cursorShape>
       </property>
       <property name="currentIndex">
-       <number>6</number>
+       <number>13</number>
       </property>
       <property name="cdpPageRouting" stdset="0">
        <string>PropanAutomatGui.ModbusMasterTCP.GuiIndexConverter.Output.Value</string>
@@ -309,7 +309,7 @@
                     <string>:/themes/cdp_light/buttons/buttonPlain.svg</string>
                    </property>
                    <property name="cdpPressedRouting" stdset="0">
-                    <string/>
+                    <string>PropanAutomatGui.ModbusSlaveTCP.WagoWriteCoilsDI.8-DI0.DI5.Value</string>
                    </property>
                   </widget>
                  </item>
@@ -799,7 +799,7 @@ flasker</string>
               <item>
                <widget class="CDPBaseStackedWidget" name="cdpBaseStackedWidget_2">
                 <property name="currentIndex">
-                 <number>0</number>
+                 <number>1</number>
                 </property>
                 <widget class="QWidget" name="StatusFullCanistersPage">
                  <layout class="QVBoxLayout" name="verticalLayout_25">
@@ -808,7 +808,7 @@ flasker</string>
                     <property name="maximumSize">
                      <size>
                       <width>16777215</width>
-                      <height>20</height>
+                      <height>30</height>
                      </size>
                     </property>
                     <property name="text">
@@ -1008,7 +1008,7 @@ flasker</string>
                     <property name="maximumSize">
                      <size>
                       <width>16777215</width>
-                      <height>20</height>
+                      <height>30</height>
                      </size>
                     </property>
                     <property name="layoutDirection">
@@ -1269,6 +1269,9 @@ flasker</string>
                 <property name="svgFile">
                  <string>:/themes/cdp_light/buttons/buttonPlain.svg</string>
                 </property>
+                <property name="cdpPressedRouting" stdset="0">
+                 <string>PropanAutomatGui.ModbusSlaveTCP.WagoWriteCoilsDI.8-DI0.DI5.Value</string>
+                </property>
                </widget>
               </item>
              </layout>
@@ -1350,6 +1353,9 @@ flasker</string>
                 <property name="svgFile">
                  <string>:/themes/cdp_light/buttons/buttonPlain.svg</string>
                 </property>
+                <property name="cdpPressedRouting" stdset="0">
+                 <string>PropanAutomatGui.ModbusSlaveTCP.WagoWriteCoilsDI.8-DI0.DI5.Value</string>
+                </property>
                </widget>
               </item>
              </layout>
@@ -1417,6 +1423,9 @@ Vennligst vent på autorisert personell.</string>
                 <property name="svgFile">
                  <string>:/themes/cdp_light/buttons/buttonPlain.svg</string>
                 </property>
+                <property name="cdpPressedRouting" stdset="0">
+                 <string>PropanAutomatGui.ModbusSlaveTCP.WagoWriteCoilsDI.8-DI0.DI5.Value</string>
+                </property>
                </widget>
               </item>
              </layout>
@@ -1450,7 +1459,7 @@ Vennligst vent på autorisert personell.</string>
         </item>
        </layout>
       </widget>
-      <widget class="QWidget" name="CloseDoorReminderPage">
+      <widget class="QWidget" name="PurchaseCanceledPage">
        <layout class="QHBoxLayout" name="horizontalLayout_23">
         <item>
          <widget class="CDPBaseContainer" name="cdpBaseContainer_11">
@@ -1471,8 +1480,47 @@ Vennligst vent på autorisert personell.</string>
            <item>
             <widget class="CDPBaseLabel" name="cdpBaseLabel_22">
              <property name="text">
-              <string>Vennligst lukk alle dører</string>
+              <string>Kjøp avbrutt.
+Trykk tilbake for å returnere til forsiden.</string>
              </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="widget_45" native="true">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>42</height>
+              </size>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_35">
+              <item>
+               <spacer name="horizontalSpacer_12">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>830</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="CDPBaseButton" name="cdpBaseButton_39">
+                <property name="text">
+                 <string>Tilbake</string>
+                </property>
+                <property name="svgFile">
+                 <string>:/themes/cdp_light/buttons/buttonPlain.svg</string>
+                </property>
+                <property name="cdpPressedRouting" stdset="0">
+                 <string>PropanAutomatGui.ModbusSlaveTCP.WagoWriteCoilsDI.8-DI0.DI5.Value</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
             </widget>
            </item>
           </layout>
@@ -1521,6 +1569,9 @@ Vennligst vent på autorisert personell.</string>
                 </property>
                 <property name="svgFile">
                  <string>:/themes/cdp_light/buttons/buttonPlain.svg</string>
+                </property>
+                <property name="cdpPressedRouting" stdset="0">
+                 <string>PropanAutomatGui.ModbusSlaveTCP.WagoWriteCoilsDI.8-DI0.DI5.Value</string>
                 </property>
                </widget>
               </item>
@@ -1976,8 +2027,8 @@ Vennligst vent på autorisert personell.</string>
    <slot>setCurrentIndex(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>87</x>
-     <y>30</y>
+     <x>948</x>
+     <y>675</y>
     </hint>
     <hint type="destinationlabel">
      <x>737</x>
@@ -1992,8 +2043,8 @@ Vennligst vent på autorisert personell.</string>
    <slot>setCurrentIndex(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>87</x>
-     <y>28</y>
+     <x>948</x>
+     <y>674</y>
     </hint>
     <hint type="destinationlabel">
      <x>777</x>
@@ -2072,8 +2123,8 @@ Vennligst vent på autorisert personell.</string>
    <slot>setCurrentIndex(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>87</x>
-     <y>28</y>
+     <x>948</x>
+     <y>674</y>
     </hint>
     <hint type="destinationlabel">
      <x>909</x>
@@ -2088,8 +2139,8 @@ Vennligst vent på autorisert personell.</string>
    <slot>setCurrentIndex(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>129</x>
-     <y>442</y>
+     <x>138</x>
+     <y>414</y>
     </hint>
     <hint type="destinationlabel">
      <x>159</x>
@@ -2104,12 +2155,28 @@ Vennligst vent på autorisert personell.</string>
    <slot>setCurrentIndex(int)</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>129</x>
-     <y>473</y>
+     <x>138</x>
+     <y>468</y>
     </hint>
     <hint type="destinationlabel">
      <x>162</x>
      <y>479</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cdpBaseButton_39</sender>
+   <signal>clicked(int)</signal>
+   <receiver>cdpBaseStackedWidget</receiver>
+   <slot>setCurrentIndex(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>967</x>
+     <y>663</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>991</x>
+     <y>677</y>
     </hint>
    </hints>
   </connection>

@@ -1,0 +1,28 @@
+<Component Model='PropanAutomatGuiLibrary.CodePanel' Name='CodePanel' src='Components/CodePanel.xml'  Description='Logic for a simple code panel'>
+  <fs>5</fs>
+
+  <Signals>
+    <Signal Description="Process run time each s." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Timer" Type="double" Unit="s/s"></Signal>
+    <Signal Description="Process interval [s]." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Period" Type="double" Unit="s"></Signal>
+    <Signal Description="Digit 0" Input="1" Model="CDPSignal&lt;bool&gt;" Name="Digit0" Type="bool"></Signal>
+    <Signal Description="Digit 1" Input="1" Model="CDPSignal&lt;bool&gt;" Name="Digit1" Type="bool"></Signal>
+    <Signal Description="Digit 2" Input="1" Model="CDPSignal&lt;bool&gt;" Name="Digit2" Type="bool"></Signal>
+    <Signal Description="Digit 3" Input="1" Model="CDPSignal&lt;bool&gt;" Name="Digit3" Type="bool"></Signal>
+    <Signal Description="Digit 4" Input="1" Model="CDPSignal&lt;bool&gt;" Name="Digit4" Type="bool"></Signal>
+    <Signal Description="Digit 5" Input="1" Model="CDPSignal&lt;bool&gt;" Name="Digit5" Type="bool"></Signal>
+    <Signal Description="Digit 6 " Input="1" Model="CDPSignal&lt;bool&gt;" Name="Digit6" Type="bool"></Signal>
+    <Signal Description="Digit 7" Input="1" Model="CDPSignal&lt;bool&gt;" Name="Digit7" Type="bool"></Signal>
+    <Signal Description="Digit 8" Input="1" Model="CDPSignal&lt;bool&gt;" Name="Digit8" Type="bool"></Signal>
+    <Signal Description="Digit 9" Input="1" Model="CDPSignal&lt;bool&gt;" Name="Digit9" Type="bool"></Signal>
+    <Signal Description="True when the digits are correct" Input="0" Model="CDPSignal&lt;bool&gt;" Name="CorrectDigits" Type="bool"  Routing='PropanAutomatGui.ModbusSlaveTCP.WagoWriteCoilsDI.8-DI1.DI4.Value'></Signal>
+    <Signal Description="Resets the digits" Input="1" Model="CDPSignal&lt;bool&gt;" Name="Reset" Type="bool"></Signal>
+  </Signals>
+
+  <Alarms>
+    <Alarm Description="A component was suspended!" Model="CDPAlarm" Name="Component Suspended" Text="Component was suspended!"></Alarm>
+  </Alarms>
+
+  <Timers>
+    <Timer Description="Timer to measure CDPComponent processing." Model="CDPTimer" Name="ProcessTimer"></Timer>
+  </Timers>
+</Component>

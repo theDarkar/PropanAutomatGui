@@ -1,0 +1,53 @@
+<Component Model='ModbusIO.ModbusMasterTCP' Name='ModbusMasterTCP' src='Components/ModbusMasterTCP.xml'  Description='An IOServer that sends and retrieves values via the Modbus/TCP (Ethernet) protocol, acting as a master (initiator of requests).'>
+  <fs>10</fs>
+
+  <Signals>
+    <Signal Description="Process run time each s." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Timer" Type="double" Unit="s/s"></Signal>
+    <Signal Description="Process interval [s]." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Period" Type="double" Unit="s"></Signal>
+    <Signal Description="Set to true when output is disabled (if parameter RD output disable control is set, and RDManager is not ActiveMaster)." Input="0" Model="CDPSignal&lt;bool&gt;" Name="outputDisabled" Type="bool"></Signal>
+    <Signal Description="The time needed to perform one send and receive." Input="0" Model="CDPSignal&lt;double&gt;" Name="Send-Receive Roundtrip time" Type="double" Unit="s"></Signal>
+    <Signal Description="Number of items working in ioserver." Input="0" Model="CDPSignal&lt;unsigned int&gt;" Name="NumberOfNodesOnline" Type="unsigned int" Unit="count"></Signal>
+    <Signal Description="Number of items total in ioserver." Input="0" Model="CDPSignal&lt;unsigned int&gt;" Name="NumberOfNodes" Type="unsigned int" Unit="count"></Signal>
+  </Signals>
+
+  <Alarms>
+    <Alarm Description="A component was suspended!" Model="CDPAlarm" Name="Component Suspended" Text="Component was suspended!"></Alarm>
+    <Alarm Description="Transmission-error alarm" Name="Transmission Error" Text="IOServer transmission-error alarm"></Alarm>
+  </Alarms>
+
+  <Timers>
+    <Timer Description="Timer to measure CDPComponent processing." Model="CDPTimer" Name="ProcessTimer"></Timer>
+    <Timer Description="Timer used to delay setting Transmission Error alarm. Timeout-delay is configured in Parameter SignalTimeout." Model="CDPParameterTimer" Name="SignalTimeoutTimer"></Timer>
+  </Timers>
+
+  <Parameters>
+    <Parameter Description="Delay before setting Transmission Error alarm." Name="SignalTimeout" PreviousValue="1" TimeLastChanged="0" Unit="s" Value="1"></Parameter>
+  </Parameters>
+  <Transport ListenPort="503" LocalName="ETH0" Model="TCPTransport" Name="NetworkTransport" RemoteIP="158.38.140.121" RemotePort="503" Timeout="100"></Transport>
+
+  <Packets>
+    <Packet DigitalModuleHandling="AlignAdjacent" DigitalRegistersAreLinear="0" FunctionCode="ReadInputRegisters" Model="ModbusIO.ModbusMasterPacket" ModuleOrdering="AsConfigured" Name="InputReg" NetworkConvert="1" ReadAddress="0" SendMode="Periodic" SlaveId="1" WriteAddress="0">
+      <Module Model="IOModule" Name="Inputs"  Description='A basic input and/or output module that accepts one or more CDPSignalChannels.'  InputBytesReservedAfter='0'  InputBytesReservedBefore='0'  OutputBytesReservedAfter='0'  OutputBytesReservedBefore='0'>
+        <Channel Input="0" Model="CDPSignalChannel&lt;short&gt;" Name="StatusFullSmallComposite" Type="short"  InternalValue='0'  NetworkConvert='0'  Value='0'></Channel>
+        <Channel Input="0" Model="CDPSignalChannel&lt;short&gt;" Name="StatusFullLargeComposite" Type="short"  InternalValue='0'  NetworkConvert='0'  Value='0'></Channel>
+        <Channel Input="0" Model="CDPSignalChannel&lt;short&gt;" Name="StatusFullSmallMetal" Type="short"  InternalValue='0'  NetworkConvert='0'  Value='0'></Channel>
+        <Channel Input="0" Model="CDPSignalChannel&lt;short&gt;" Name="StatusFullLargeMetal" Type="short"  InternalValue='0'  NetworkConvert='0'  Value='0'></Channel>
+        <Channel Input="0" Model="CDPSignalChannel&lt;short&gt;" Name="GUIIndex" Type="short"  InternalValue='0'  NetworkConvert='0'  Value='0'></Channel>
+        <Channel Input="0" Model="CDPSignalChannel&lt;short&gt;" Name="StatusEmptySmallComposite" Type="short"  NetworkConvert='0'></Channel>
+        <Channel Input="0" Model="CDPSignalChannel&lt;short&gt;" Name="StatusEmptyLargeComposite" Type="short"  NetworkConvert='0'></Channel>
+        <Channel Input="0" Model="CDPSignalChannel&lt;short&gt;" Name="StatusEmptySmallMetal" Type="short"  NetworkConvert='0'></Channel>
+        <Channel Input="0" Model="CDPSignalChannel&lt;short&gt;" Name="StatusEmptyLargeMetal" Type="short"  NetworkConvert='0'></Channel></Module></Packet>
+  </Packets>
+
+  <Subcomponents>
+    <Subcomponent Model="PropanAutomatGuiLibrary.CodesysToCDPSignalConverter" Name="GuiIndexConverter" src="Components/ModbusMasterTCP/GuiIndexConverter.xml"></Subcomponent>
+    <Subcomponent Model="PropanAutomatGuiLibrary.CodesysToCDPSignalConverter" Name="StatusFullSmallCompositeConverter" src="Components/ModbusMasterTCP/StatusFullSmallCompositeConverter.xml"></Subcomponent>
+    <Subcomponent Model="PropanAutomatGuiLibrary.CodesysToCDPSignalConverter" Name="StatusFullLargeCompositeConverter" src="Components/ModbusMasterTCP/StatusFullLargeCompositeConverter.xml"></Subcomponent>
+    <Subcomponent Model="PropanAutomatGuiLibrary.CodesysToCDPSignalConverter" Name="StatusFullSmallMetalConverter" src="Components/ModbusMasterTCP/StatusFullSmallMetalConverter.xml"></Subcomponent>
+    <Subcomponent Model="PropanAutomatGuiLibrary.CodesysToCDPSignalConverter" Name="StatusFullLargeMetalConverter" src="Components/ModbusMasterTCP/StatusFullLargeMetalConverter.xml"></Subcomponent>
+    <Subcomponent Model="PropanAutomatGuiLibrary.CodesysToCDPSignalConverter" Name="StatusEmptySmallCompositeConverter" src="Components/ModbusMasterTCP/StatusEmptySmallCompositeConverter.xml"></Subcomponent>
+    <Subcomponent Model="PropanAutomatGuiLibrary.CodesysToCDPSignalConverter" Name="StatusEmptyLargeCompositeConverter" src="Components/ModbusMasterTCP/StatusEmptyLargeCompositeConverter.xml"></Subcomponent>
+    <Subcomponent Model="PropanAutomatGuiLibrary.CodesysToCDPSignalConverter" Name="StatusEmptySmallMetalConverter" src="Components/ModbusMasterTCP/StatusEmptySmallMetalConverter.xml"></Subcomponent>
+    <Subcomponent Model="PropanAutomatGuiLibrary.CodesysToCDPSignalConverter" Name="StatusEmptyLargeMetalConverter" src="Components/ModbusMasterTCP/StatusEmptyLargeMetalConverter.xml"></Subcomponent>
+  </Subcomponents>
+</Component>

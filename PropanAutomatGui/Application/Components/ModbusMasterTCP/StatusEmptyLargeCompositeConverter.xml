@@ -1,0 +1,18 @@
+<Component Model='PropanAutomatGuiLibrary.CodesysToCDPSignalConverter' Name='StatusEmptyLargeCompositeConverter' src='Components/ModbusMasterTCP/StatusEmptyLargeCompositeConverter.xml'  Description='Converts the WORD sent from CODESYS V3.5, which are read by CDPStudio as f(x)=256*x and x is the real value in CODESYS, with this function g(y)=y/256.'>
+  <fs>5</fs>
+
+  <Signals>
+    <Signal Description="Process run time each s." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Timer" Type="double" Unit="s/s"></Signal>
+    <Signal Description="Process interval [s]." Input="0" Model="CDPSignal&lt;double&gt;" Name="Process Period" Type="double" Unit="s"></Signal>
+    <Signal Description="Input short" Input="1" Model="CDPSignal&lt;short&gt;" Name="Input" Type="short"  Routing='PropanAutomatGui.ModbusMasterTCP.InputReg.Inputs.StatusEmptyLargeComposite.Value'></Signal>
+    <Signal Description="Output double" Input="0" Model="CDPSignal&lt;double&gt;" Name="Output" Type="double"></Signal>
+  </Signals>
+
+  <Alarms>
+    <Alarm Description="A component was suspended!" Model="CDPAlarm" Name="Component Suspended" Text="Component was suspended!"></Alarm>
+  </Alarms>
+
+  <Timers>
+    <Timer Description="Timer to measure CDPComponent processing." Model="CDPTimer" Name="ProcessTimer"></Timer>
+  </Timers>
+</Component>

@@ -37,14 +37,14 @@
         <Channel Description="Digital input (bit 6)" Input="1" Model="CDPSignalChannel&lt;bool&gt;" Name="DI6" Nr="0" Type="bool"></Channel>
         <Channel Description="Digital input (bit 7)" Input="1" Model="CDPSignalChannel&lt;bool&gt;" Name="DI7" Nr="1" Type="bool"></Channel></Module>
       <Module Description="Generic 8-channel digital input module" Model="ModbusIO.8-DI" Name="8-DI1">
-        <Channel Description="Digital input (bit 0)" Input="0" Model="CDPSignalChannel&lt;bool&gt;" Name="DI0" Nr="1" Type="bool"></Channel>
-        <Channel Description="Digital input (bit 1)" Input="0" Model="CDPSignalChannel&lt;bool&gt;" Name="DI1" Nr="1" Type="bool"></Channel>
-        <Channel Description="Digital input (bit 2)" Input="0" Model="CDPSignalChannel&lt;bool&gt;" Name="DI2" Nr="1" Type="bool"></Channel>
-        <Channel Description="Digital input (bit 3)" Input="0" Model="CDPSignalChannel&lt;bool&gt;" Name="DI3" Nr="1" Type="bool"></Channel>
-        <Channel Description="Digital input (bit 4)" Input="0" Model="CDPSignalChannel&lt;bool&gt;" Name="DI4" Nr="1" Type="bool"></Channel>
-        <Channel Description="Digital input (bit 5)" Input="0" Model="CDPSignalChannel&lt;bool&gt;" Name="DI5" Nr="1" Type="bool"></Channel>
-        <Channel Description="Digital input (bit 6)" Input="0" Model="CDPSignalChannel&lt;bool&gt;" Name="DI6" Nr="1" Type="bool"></Channel>
-        <Channel Description="Digital input (bit 7)" Input="0" Model="CDPSignalChannel&lt;bool&gt;" Name="DI7" Nr="1" Type="bool"></Channel></Module></Packet>
+        <Channel Description="Digital input (bit 0)" Input="1" Model="CDPSignalChannel&lt;bool&gt;" Name="DI0" Nr="1" Type="bool"></Channel>
+        <Channel Description="Digital input (bit 1)" Input="1" Model="CDPSignalChannel&lt;bool&gt;" Name="DI1" Nr="1" Type="bool"></Channel>
+        <Channel Description="Digital input (bit 2)" Input="1" Model="CDPSignalChannel&lt;bool&gt;" Name="DI2" Nr="1" Type="bool"></Channel>
+        <Channel Description="Digital input (bit 3)" Input="1" Model="CDPSignalChannel&lt;bool&gt;" Name="DI3" Nr="1" Type="bool"></Channel>
+        <Channel Description="Digital input (bit 4)" Input="1" Model="CDPSignalChannel&lt;bool&gt;" Name="DI4" Nr="1" Type="bool"></Channel>
+        <Channel Description="Digital input (bit 5)" Input="1" Model="CDPSignalChannel&lt;bool&gt;" Name="DI5" Nr="1" Type="bool"></Channel>
+        <Channel Description="Digital input (bit 6)" Input="1" Model="CDPSignalChannel&lt;bool&gt;" Name="DI6" Nr="1" Type="bool"></Channel>
+        <Channel Description="Digital input (bit 7)" Input="1" Model="CDPSignalChannel&lt;bool&gt;" Name="DI7" Nr="1" Type="bool"></Channel></Module></Packet>
   </Packets>
 
   <Subcomponents></Subcomponents>
